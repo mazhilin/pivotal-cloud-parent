@@ -90,225 +90,225 @@
                 </exclusions>
             </dependency>
 
-            <!--smart-cloud-framework依赖配置-->
+            <!--pivotal-cloud-framework依赖配置-->
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-boot</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-boot</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-nacos</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <!--smart-cloud-common依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-common-api</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-common-base</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-common-center</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-common-domain</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-common-web</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <!--smart-cloud-dubbo依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-dubbo-common</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-nacos</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
+            <!--pivotal-cloud-common依赖配置-->
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-dubbo-provider</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-api</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-dubbo-consumer</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-base</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
-
-            <!--smart-cloud-kafka依赖配置-->
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-kafka-common</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-center</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-domain</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-web</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <!--pivotal-cloud-dubbo依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dubbo-common</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-kafka-producer</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dubbo-provider</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-kafka-consumer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <!--smart-cloud-redismq依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redismq-common</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dubbo-consumer</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
+            <!--pivotal-cloud-kafka依赖配置-->
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redismq-producer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redismq-consumer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <!--smart-cloud-rocketmq依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-rocketmq-common</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-kafka-common</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-rocketmq-producer</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-kafka-producer</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-rocketmq-consumer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <!--smart-cloud-pulsar依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-pulsar-common</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-kafka-consumer</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
+            <!--pivotal-cloud-redismq依赖配置-->
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-pulsar-producer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-pulsar-consumer</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-extension</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-redismq-common</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-integration</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-redismq-producer</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-redismq-consumer</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <!--pivotal-cloud-rocketmq依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-rocketmq-common</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-scheduled</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-rocketmq-producer</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-rocketmq-consumer</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <!--pivotal-cloud-pulsar依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-pulsar-common</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-logger</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-pulsar-producer</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-pulsar-consumer</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-extension</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-mysql</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-integration</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-mybatis</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-scheduled</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-payment</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-logger</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redis</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-mysql</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-security</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-mybatis</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-redisson</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-
-            <!--smart-cloud-sso依赖配置-->
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-common</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-server</artifactId>
-                <version>${smart-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-client</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-payment</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-shiro</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-redis</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.smart.cloud</groupId>
-                <artifactId>smart-cloud-sso-oauth</artifactId>
-                <version>${smart-cloud.version}</version>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-security</artifactId>
+                <version>${pivotal-cloud.version}</version>
             </dependency>
 
-            <!--smart-cloud-framework依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-redisson</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <!--pivotal-cloud-sso依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-sso-common</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-sso-server</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-sso-client</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-sso-shiro</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-sso-oauth</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <!--pivotal-cloud-framework依赖配置-->
         </dependencies>
     </dependencyManagement>
 
