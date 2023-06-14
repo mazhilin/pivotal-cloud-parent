@@ -27,6 +27,12 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>pivotal-cloud-storage-boot</module>
+        <module>pivotal-cloud-storage-local</module>
+        <module>pivotal-cloud-storage-minio</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>

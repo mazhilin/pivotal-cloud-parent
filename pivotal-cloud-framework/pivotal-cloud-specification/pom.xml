@@ -26,6 +26,12 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>pivotal-cloud-specification-boot</module>
+        <module>pivotal-cloud-specification-springdoc</module>
+        <module>pivotal-cloud-specification-swagger</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>

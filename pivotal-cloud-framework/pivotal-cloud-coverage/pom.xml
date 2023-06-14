@@ -26,6 +26,14 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>pivotal-cloud-coverage-boot</module>
+        <module>pivotal-cloud-coverage-audit</module>
+        <module>pivotal-cloud-coverage-feign</module>
+        <module>pivotal-cloud-coverage-logger</module>
+        <module>pivotal-cloud-coverage-socket</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>

@@ -26,6 +26,11 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>pivotal-cloud-datasource-boot</module>
+        <module>pivotal-cloud-datasource-druid</module>
+        <module>pivotal-cloud-datasource-hikari</module>
+    </modules>
     <build>
         <plugins>
             <plugin>

@@ -26,6 +26,12 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>pivotal-cloud-datacache-boot</module>
+        <module>pivotal-cloud-datacache-j2cache</module>
+        <module>pivotal-cloud-datacache-jetcache</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>

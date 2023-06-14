@@ -4,15 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-framework</artifactId>
+        <artifactId>pivotal-cloud-coverage</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-scheduled</artifactId>
+    <artifactId>pivotal-cloud-coverage-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-scheduled</name>
+    <name>pivotal-cloud-coverage-boot</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -25,12 +27,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>pivotal-cloud-scheduled-boot</module>
-        <module>pivotal-cloud-scheduled-xxljob</module>
-        <module>pivotal-cloud-scheduled-elasticjob</module>
-    </modules>
 
     <build>
         <plugins>
