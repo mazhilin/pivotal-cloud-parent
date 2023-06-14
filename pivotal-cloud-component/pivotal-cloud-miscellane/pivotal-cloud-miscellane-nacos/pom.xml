@@ -4,16 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-parent</artifactId>
+        <artifactId>pivotal-cloud-miscellane</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-component</artifactId>
+    <artifactId>pivotal-cloud-miscellane-nacos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-component</name>
+    <name>pivotal-cloud-miscellane-nacos</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,15 +26,13 @@
         </dependency>
     </dependencies>
 
-    <modules>
-        <module>pivotal-cloud-configure</module>
-        <module>pivotal-cloud-discovery</module>
-        <module>pivotal-cloud-gateway</module>
-        <module>pivotal-cloud-governance</module>
-        <module>pivotal-cloud-management</module>
-        <module>pivotal-cloud-miscellane</module>
-        <module>pivotal-cloud-registry</module>
-    </modules>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
