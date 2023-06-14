@@ -30,6 +30,14 @@
         </dependency>
     </dependencies>
 
-
+    <modules>
+        <module>pivotal-cloud-application</module>
+        <module>pivotal-cloud-coverage</module>
+        <module>pivotal-cloud-datacache</module>
+        <module>pivotal-cloud-datasource</module>
+        <module>pivotal-cloud-scheduled</module>
+        <module>pivotal-cloud-specification</module>
+        <module>pivotal-cloud-storage</module>
+    </modules>
 
 </project>

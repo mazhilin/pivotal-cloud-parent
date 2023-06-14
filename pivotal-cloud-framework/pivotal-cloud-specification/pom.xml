@@ -4,16 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-parent</artifactId>
+        <artifactId>pivotal-cloud-framework</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-common</artifactId>
+    <artifactId>pivotal-cloud-specification</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-common</name>
+    <name>pivotal-cloud-specification</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,13 +26,13 @@
         </dependency>
     </dependencies>
 
-    <modules>
-        <module>pivotal-cloud-common-api</module>
-        <module>pivotal-cloud-common-base</module>
-        <module>pivotal-cloud-common-boot</module>
-        <module>pivotal-cloud-common-center</module>
-        <module>pivotal-cloud-common-domain</module>
-        <module>pivotal-cloud-common-web</module>
-    </modules>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
