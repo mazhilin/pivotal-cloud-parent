@@ -4,16 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-component</artifactId>
+        <artifactId>pivotal-cloud-management</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-governance</artifactId>
+    <artifactId>pivotal-cloud-management-metrics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-governance</name>
+    <name>pivotal-cloud-management-metrics</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-
+    <properties>
+        <java.version>17</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -26,13 +27,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>pivotal-cloud-governance-boot</module>
-        <module>pivotal-cloud-governance-hystrix</module>
-        <module>pivotal-cloud-governance-sentinel</module>
-        <module>pivotal-cloud-governance-resilience</module>
-    </modules>
 
     <build>
         <plugins>

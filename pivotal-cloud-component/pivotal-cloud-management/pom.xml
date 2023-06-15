@@ -27,6 +27,12 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>pivotal-cloud-management-boot</module>
+        <module>pivotal-cloud-management-metrics</module>
+        <module>pivotal-cloud-management-monitor</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
