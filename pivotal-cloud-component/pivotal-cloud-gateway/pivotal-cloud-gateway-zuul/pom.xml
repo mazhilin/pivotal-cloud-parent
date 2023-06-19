@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-component</artifactId>
+        <artifactId>pivotal-cloud-gateway</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-gateway</artifactId>
+    <artifactId>pivotal-cloud-gateway-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-gateway</name>
+    <name>pivotal-cloud-gateway-zuul</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -27,19 +27,5 @@
         </dependency>
     </dependencies>
 
-    <modules>
-        <module>pivotal-cloud-gateway-boot</module>
-        <module>pivotal-cloud-gateway-spring</module>
-        <module>pivotal-cloud-gateway-zuul</module>
-    </modules>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
