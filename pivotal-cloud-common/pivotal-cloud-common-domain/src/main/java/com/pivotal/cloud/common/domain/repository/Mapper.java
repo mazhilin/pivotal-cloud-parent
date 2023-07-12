@@ -1,7 +1,7 @@
-package com.pivotal.cloud.common.dao;
+package com.pivotal.cloud.common.domain.repository;
 
 /**
- * @className: com.pivotal.cloud.common.dao.Mapper
+ * @className: com.pivotal.cloud.common.domain.repository.Mapper
  * @projectName: 封装PivotalCloud项目-Mapper类
  * @module: PivotalCloud项目-Mapper类，主要位于Mapper模块的业务场景
  * @content: Mapper类，主要用于完成Mapper的封装和定义.

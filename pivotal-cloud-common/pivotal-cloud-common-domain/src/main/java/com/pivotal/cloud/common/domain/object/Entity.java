@@ -1,7 +1,7 @@
-package com.pivotal.cloud.common.domain;
+package com.pivotal.cloud.common.domain.object;
 
 /**
- * @className: com.pivotal.cloud.common.domain.Entity
+ * @className: com.pivotal.cloud.common.domain.object.Entity
  * @projectName: 封装PivotalCloud项目-Entity类
  * @module: PivotalCloud项目-Entity类，主要位于Entity模块的业务场景
  * @content: Entity类，主要用于完成Entity的封装和定义.

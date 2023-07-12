@@ -1,9 +1,9 @@
-package com.pivotal.cloud.common.domain.base.entity;
+package com.pivotal.cloud.common.domain.object.entity;
 
-import com.pivotal.cloud.common.domain.Entity;
+import com.pivotal.cloud.common.domain.object.Entity;
 
 /**
- * @className: com.pivotal.cloud.common.domain.base.entity.BaseEntity
+ * @className: com.pivotal.cloud.common.domain.object.entity.BaseEntity
  * @projectName: 封装PivotalCloud项目-BaseEntity类
  * @module: PivotalCloud项目-BaseEntity类，主要位于BaseEntity模块的业务场景
  * @content: BaseEntity类，主要用于完成BaseEntity的封装和定义.

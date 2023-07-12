@@ -1,9 +1,9 @@
-package com.pivotal.cloud.common.dao.service.impl;
+package com.pivotal.cloud.common.domain.repository.service.impl;
 
-import com.pivotal.cloud.common.dao.service.BaseService;
+import com.pivotal.cloud.common.domain.repository.service.BaseService;
 
 /**
- * @className: com.pivotal.cloud.common.dao.service.impl.ServiceImpl
+ * @className: com.pivotal.cloud.common.domain.repository.service.impl.ServiceImpl
  * @projectName: 封装PivotalCloud项目-ServiceImpl类
  * @module: PivotalCloud项目-ServiceImpl类，主要位于ServiceImpl模块的业务场景
  * @content: ServiceImpl类，主要用于完成ServiceImpl的封装和定义.

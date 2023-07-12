@@ -1,9 +1,9 @@
-package com.pivotal.cloud.common.domain.base.model;
+package com.pivotal.cloud.common.domain.object.model;
 
-import com.pivotal.cloud.common.domain.Model;
+import com.pivotal.cloud.common.domain.object.Model;
 
 /**
- * @className: com.pivotal.cloud.common.domain.base.model.BaseModel
+ * @className: com.pivotal.cloud.common.domain.object.model.BaseModel
  * @projectName: 封装PivotalCloud项目-BaseModel类
  * @module: PivotalCloud项目-BaseModel类，主要位于BaseModel模块的业务场景
  * @content: BaseModel类，主要用于完成BaseModel的封装和定义.

@@ -1,7 +1,7 @@
-package com.pivotal.cloud.common.domain;
+package com.pivotal.cloud.common.domain.object;
 
 /**
- * @className: com.pivotal.cloud.common.domain.Model
+ * @className: com.pivotal.cloud.common.domain.object.Model
  * @projectName: 封装PivotalCloud项目-Model类
  * @module: PivotalCloud项目-Model类，主要位于Model模块的业务场景
  * @content: Model类，主要用于完成Model的封装和定义.

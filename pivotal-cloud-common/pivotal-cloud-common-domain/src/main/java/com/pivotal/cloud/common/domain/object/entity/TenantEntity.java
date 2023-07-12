@@ -1,7 +1,7 @@
-package com.pivotal.cloud.common.domain.base.entity;
+package com.pivotal.cloud.common.domain.object.entity;
 
 /**
- * @className: com.pivotal.cloud.common.domain.base.entity.TenantEntity
+ * @className: com.pivotal.cloud.common.domain.object.entity.TenantEntity
  * @projectName: 封装PivotalCloud项目-TenantEntity类
  * @module: PivotalCloud项目-TenantEntity类，主要位于TenantEntity模块的业务场景
  * @content: TenantEntity类，主要用于完成TenantEntity的封装和定义.
