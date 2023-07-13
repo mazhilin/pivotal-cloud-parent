@@ -1,9 +1,9 @@
-package com.pivotal.cloud.common.api.base.server;
+package com.pivotal.cloud.common.api.service.server;
 
 import com.pivotal.cloud.common.api.Server;
 
 /**
- * @className: com.pivotal.cloud.common.api.base.server.ApiServer
+ * @className: com.pivotal.cloud.common.api.service.server.ApiServer
  * @projectName: 封装PivotalCloud项目-ApiServer类
  * @module: PivotalCloud项目-ApiServer类，主要位于ApiServer模块的业务场景
  * @content: ApiServer类，主要用于完成ApiServer的封装和定义.

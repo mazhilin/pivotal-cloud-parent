@@ -1,4 +1,4 @@
-package com.pivotal.cloud.common.doamin.base.response;
+package com.pivotal.cloud.common.doamin.object.response;
 
 import com.pivotal.cloud.common.doamin.Response;
 

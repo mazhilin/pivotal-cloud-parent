@@ -1,9 +1,9 @@
-package com.pivotal.cloud.common.api.base.client;
+package com.pivotal.cloud.common.api.service.client;
 
 import com.pivotal.cloud.common.api.Client;
 
 /**
- * @className: com.pivotal.cloud.common.api.base.client.ApiClient
+ * @className: com.pivotal.cloud.common.api.service.client.ApiClient
  * @projectName: 封装PivotalCloud项目-ApiClient类
  * @module: PivotalCloud项目-ApiClient类，主要位于ApiClient模块的业务场景
  * @content: ApiClient类，主要用于完成ApiClient的封装和定义.

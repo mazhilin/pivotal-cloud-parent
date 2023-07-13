@@ -1,4 +1,4 @@
-package com.pivotal.cloud.common.doamin.base.request;
+package com.pivotal.cloud.common.doamin.object.request;
 
 import com.pivotal.cloud.common.doamin.Request;
 
