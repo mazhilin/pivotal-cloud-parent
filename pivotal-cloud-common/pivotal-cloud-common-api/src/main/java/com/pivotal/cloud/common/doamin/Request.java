@@ -1,5 +1,7 @@
 package com.pivotal.cloud.common.doamin;
 
+import java.io.Serializable;
+
 /**
  * @className: com.pivotal.cloud.common.doamin.Request
  * @projectName: 封装PivotalCloud项目-Request类
@@ -10,5 +12,5 @@ package com.pivotal.cloud.common.doamin;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 PivotalCloud Systems Incorporated. All rights reserved.
  */
-public interface Request {
+public interface Request extends Serializable {
 }

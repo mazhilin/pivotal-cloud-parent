@@ -1,5 +1,7 @@
 package com.pivotal.cloud.common.domain.object;
 
+import java.io.Serializable;
+
 /**
  * @className: com.pivotal.cloud.common.domain.object.Model
  * @projectName: 封装PivotalCloud项目-Model类
@@ -10,5 +12,5 @@ package com.pivotal.cloud.common.domain.object;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 PivotalCloud Systems Incorporated. All rights reserved.
  */
-public interface Model {
+public interface Model extends Serializable {
 }
