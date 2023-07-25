@@ -3,6 +3,8 @@ package com.pivotal.cloud.boot.pojo;
 import com.pivotal.cloud.boot.exception.ErrorMessage;
 import com.pivotal.cloud.boot.timestamp.Timestamp;
 import com.pivotal.cloud.boot.utils.ApiResultUtil;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 import lombok.experimental.Accessors;
 
@@ -22,15 +24,15 @@ import java.io.Serializable;
 @ToString
 @AllArgsConstructor
 @Accessors(chain = true)
+@ApiModel(value = "统一返回数据实体")
 public class Payload<T> implements Serializable {
-
-    private static final long serialVersionUID = -3782237229011631148L;
 
     /**
      * 编码-code
      */
     @Getter
     @Setter
+    @ApiModelProperty(value = "编码-code：成功标记=200，失败标记=500")
     private Integer code = 200;
 
     /**
@@ -38,6 +40,7 @@ public class Payload<T> implements Serializable {
      */
     @Getter
     @Setter
+    @ApiModelProperty(value = "状态-success：成功标记=true，失败标记=false")
     private Boolean success = true;
 
     /**
@@ -45,6 +48,7 @@ public class Payload<T> implements Serializable {
      */
     @Getter
     @Setter
+    @ApiModelProperty(value = "消息-message")
     private String message = "成功";
 
     /**
@@ -52,6 +56,7 @@ public class Payload<T> implements Serializable {
      */
     @Getter
     @Setter
+    @ApiModelProperty(value = "数据-data")
     private T data;
 
     /**
@@ -59,7 +64,9 @@ public class Payload<T> implements Serializable {
      */
     @Getter
     @Setter
+    @ApiModelProperty(value = "接口调用时间-timestamp")
     private long timestamp;
+
 
     public Payload (){
         this.timestamp = Timestamp.currentTime();
@@ -70,12 +77,12 @@ public class Payload<T> implements Serializable {
      * <p>
      * 因为 A 方法返回的 Payload 对象，不满足调用其的 B 方法的返回，所以需要进行转换。
      *
-     * @param <T>     返回的泛型
      * @param payload 传入的 result 对象
+     * @param <T>     返回的泛型
      * @return Payload 对象
      */
     public static <T> Payload<T> error(Payload<?> payload) {
-        return ApiResultUtil.restResult(payload.getCode(),false,payload.getMessage());
+        return ApiResultUtil.restResult(payload.getCode(), false, payload.getMessage(), null);
     }
 
 
