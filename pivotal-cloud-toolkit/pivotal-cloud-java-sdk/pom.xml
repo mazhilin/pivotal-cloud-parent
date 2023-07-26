@@ -4,16 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-parent</artifactId>
+        <artifactId>pivotal-cloud-toolkit</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-toolkit</artifactId>
+    <artifactId>pivotal-cloud-java-sdk</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-toolkit</name>
+    <name>pivotal-cloud-java-sdk</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,10 +26,13 @@
         </dependency>
     </dependencies>
 
-    <modules>
-        <module>pivotal-cloud-java-agent</module>
-        <module>pivotal-cloud-java-sdk</module>
-    </modules>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
