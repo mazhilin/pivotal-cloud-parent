@@ -2,6 +2,8 @@ package com.pivotal.cloud.boot.exception;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @className: com.pivotal.cloud.boot.exception.ErrorMessage
  * @projectName: 封装PivotalCloud项目-ErrorMessage类
@@ -13,7 +15,10 @@ import lombok.Data;
  * @copyright: Copyright © 2018-2023 PivotalCloud Systems Incorporated. All rights reserved.
  */
 @Data
-public class ErrorMessage {
+public class ErrorMessage implements Serializable {
+
+    private static final long serialVersionUID = -3625974231533756736L;
+
     /**
      * 错误码-code
      */
