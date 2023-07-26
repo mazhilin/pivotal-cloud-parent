@@ -25,9 +25,19 @@ public class AppRuntimeEnvironment implements Environment {
     private ThreadLocal<String> tenantId = TransmittableThreadLocal.withInitial(() -> null);
 
     /**
+     * accountId 账号ID
+     */
+    private ThreadLocal<Long> accountId = ThreadLocal.withInitial(() -> null);
+
+    /**
+     * 系统租户id
+     */
+    private ThreadLocal<String> isolationId = TransmittableThreadLocal.withInitial(() -> null);
+
+    /**
      * 系统组织id
      */
-    private ThreadLocal<String> companyId = TransmittableThreadLocal.withInitial(() -> null);
+    private ThreadLocal<String> identifierCode = TransmittableThreadLocal.withInitial(() -> null);
 
     /**
      * 系统Token
@@ -66,7 +76,7 @@ public class AppRuntimeEnvironment implements Environment {
         return this;
     }
 
-    public AppRuntimeEnvironment ensureTenantCode(String tenantId) {
+    public AppRuntimeEnvironment ensureTenantId(String tenantId) {
         if (null == tenantId) {
             throw new ApplicationException("");
         }
@@ -74,11 +84,11 @@ public class AppRuntimeEnvironment implements Environment {
         return this;
     }
 
-    public AppRuntimeEnvironment ensureEnterpriseCode(String enterpriseCode) {
-        if (null == enterpriseCode) {
+    public AppRuntimeEnvironment ensureIdentifierCode(String identifier) {
+        if (null == identifier) {
             throw new ApplicationException("");
         }
-        this.companyId.set(enterpriseCode);
+        this.identifierCode.set(identifier);
         return this;
     }
 
@@ -159,11 +169,16 @@ public class AppRuntimeEnvironment implements Environment {
      */
     @Override
     public void clearContext() {
-
+        this.setRequestId(null);
+        this.setAppId(null);
+        this.setToken(null);
+        this.setUserId(null);
+        this.setUsername(null);
+        this.setNickName(null);
     }
 
     @Override
     public void destroy() throws Exception {
-
+        this.clearContext();
     }
 }
