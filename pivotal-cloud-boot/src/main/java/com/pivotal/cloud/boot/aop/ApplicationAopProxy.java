@@ -16,7 +16,7 @@ import org.springframework.aop.framework.AopContext;
 public interface ApplicationAopProxy <T> extends Proxy {
 
     @SuppressWarnings("unchecked")
-    default T self() {
+    default T instance() {
         return (T) AopContext.currentProxy();
     }
 }
