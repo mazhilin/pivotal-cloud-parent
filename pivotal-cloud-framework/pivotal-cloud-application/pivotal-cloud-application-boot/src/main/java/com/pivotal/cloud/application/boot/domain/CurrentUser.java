@@ -16,6 +16,9 @@ import java.io.Serializable;
  */
 @Data
 public class CurrentUser implements Serializable {
+
+    private static final long serialVersionUID = -1276607749246961984L;
+
     private Long appId;
     private String tenantId;
     private String identifier;
