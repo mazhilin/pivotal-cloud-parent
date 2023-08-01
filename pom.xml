@@ -125,6 +125,24 @@
                 <version>${pivotal-cloud.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-datasource-boot</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-datasource-hikari</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-datasource-druid</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+
 
             <!--pivotal-cloud-kafka依赖配置-->
             <dependency>

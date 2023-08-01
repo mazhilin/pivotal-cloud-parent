@@ -1,0 +1,83 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties" ,
+      "name": "pivotal.cloud.dynamic.hikari.datasource",
+      "type": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.aop",
+      "description": "aop with default ds annotation",
+      "type": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.datasource",
+      "description": "每一个数据源",
+      "type": "java.util.Map<java.lang.String,com.pivotal.cloud.datasource.boot.properties.DatasourceProperties>"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.druid",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.lazy",
+      "description": "是否懒加载数据源",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.p6spy",
+      "description": "是否使用p6spy输出，默认不输出",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": "master",
+      "name": "pivotal.cloud.dynamic.druid.datasource.primary",
+      "description": "必须设置默认的库,默认master",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.public-key",
+      "description": "全局默认publicKey",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.seata",
+      "description": "是否使用开启seata，默认不开启",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.seata-mode",
+      "description": "seata使用模式，默认AT",
+      "type": "com.pivotal.cloud.datasource.boot.constants.SeataMode"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.strategy",
+      "description": "多数据源选择算法clazz，默认负载均衡算法",
+      "type": "java.lang.Class<? extends com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceStrategy>"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.strict",
+      "description": "是否启用严格模式,默认不启动. 严格模式下未匹配到数据源直接报错, 非严格模式下则使用默认数据源primary所设置的数据源",
+      "type": "java.lang.Boolean"
+    }
+  ]
+}

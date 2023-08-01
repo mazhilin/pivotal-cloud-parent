@@ -5,16 +5,16 @@ import com.pivotal.cloud.boot.timestamp.Timestamp;
 import lombok.experimental.UtilityClass;
 
 /**
- * @className: com.smart.cloud.boot.utils.ApiResultUtil
- * @title: 封装SmartCloud项目-ApiResultUtil类
+ * @className: com.pivotal.cloud.boot.utils.ApiResultUtil
+ * @title: 封装pivotalCloud项目-ApiResultUtil类
  * @description: <p>
- *         SmartCloud项目-ApiResultUtil
+ *         pivotalCloud项目-ApiResultUtil
  *         </p>
  * @content: ApiResultUtil
  * @author: Powered by marklin
  * @datetime: 2023-04-30 19:28
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 SmartCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @UtilityClass
 public class ApiResultUtil {
