@@ -96,11 +96,7 @@
                 <artifactId>pivotal-cloud-boot</artifactId>
                 <version>${pivotal-cloud.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-nacos</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
+
 
             <!--pivotal-cloud-common依赖配置-->
             <dependency>
@@ -128,23 +124,7 @@
                 <artifactId>pivotal-cloud-common-web</artifactId>
                 <version>${pivotal-cloud.version}</version>
             </dependency>
-            <!--pivotal-cloud-dubbo依赖配置-->
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-dubbo-common</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
 
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-dubbo-provider</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-dubbo-consumer</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
 
             <!--pivotal-cloud-kafka依赖配置-->
             <dependency>
@@ -221,12 +201,6 @@
 
             <dependency>
                 <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-extension</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
                 <artifactId>pivotal-cloud-integration</artifactId>
                 <version>${pivotal-cloud.version}</version>
             </dependency>
@@ -237,76 +211,9 @@
                 <version>${pivotal-cloud.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-logger</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
 
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-mysql</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
 
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-mybatis</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
 
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-payment</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-redis</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-security</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-redisson</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <!--pivotal-cloud-sso依赖配置-->
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-sso-common</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-sso-server</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-sso-client</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-sso-shiro</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.pivotal.cloud</groupId>
-                <artifactId>pivotal-cloud-sso-oauth</artifactId>
-                <version>${pivotal-cloud.version}</version>
-            </dependency>
 
             <!--pivotal-cloud-framework依赖配置-->
         </dependencies>
