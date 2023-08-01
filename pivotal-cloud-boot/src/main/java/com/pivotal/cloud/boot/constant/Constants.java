@@ -118,4 +118,9 @@ public class Constants {
      * !号
      */
     public static final String exclamation = "!";
+
+    /**
+     * 成功标记
+     */
+    public static final Integer SUCCESS = 0;
 }
