@@ -4,6 +4,7 @@ import com.pivotal.cloud.datacache.jetcache.config.JetcacheDatacacheAspectAutoCo
 import com.pivotal.cloud.datacache.jetcache.config.JetcacheDatacacheAssistAutoConfig;
 import com.pivotal.cloud.datacache.jetcache.config.JetcacheDatacacheCreatorAutoConfig;
 import com.pivotal.cloud.datacache.jetcache.properties.DynamicJetcacheDatacacheProperties;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -23,5 +24,16 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @EnableConfigurationProperties(DynamicJetcacheDatacacheProperties.class)
 @Import(value = {JetcacheDatacacheCreatorAutoConfig.class, JetcacheDatacacheAssistAutoConfig.class, JetcacheDatacacheAspectAutoConfig.class})
-public class EnableDynamicJetcacheDatacacheAutoConfiguration {
+public class EnableDynamicJetcacheDatacacheAutoConfiguration implements InitializingBean {
+
+    protected final DynamicJetcacheDatacacheProperties properties;
+
+    public EnableDynamicJetcacheDatacacheAutoConfiguration(DynamicJetcacheDatacacheProperties properties) {
+        this.properties = properties;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+
+    }
 }
