@@ -35,6 +35,7 @@
         <module>pivotal-cloud-application-security</module>
         <module>pivotal-cloud-application-template</module>
         <module>pivotal-cloud-application-message</module>
+        <module>pivotal-cloud-application-social</module>
     </modules>
 
     <build>

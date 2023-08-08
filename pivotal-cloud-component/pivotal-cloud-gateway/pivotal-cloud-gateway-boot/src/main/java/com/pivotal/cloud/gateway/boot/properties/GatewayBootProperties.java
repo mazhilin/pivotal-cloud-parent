@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * @className: com.pivotal.cloud.gateway.boot.properties.PivotalCloudGatewayProperties
+ * @className: com.pivotal.cloud.gateway.boot.properties.GatewayBootProperties
  * @projectName: 封装PivotalCloud项目-PivotalCloudGatewayProperties类
  * @module: PivotalCloud项目-PivotalCloudGatewayProperties类，主要位于PivotalCloudGatewayProperties模块的业务场景
  * @content: PivotalCloudGatewayProperties类，主要用于完成PivotalCloudGatewayProperties的封装和定义.
