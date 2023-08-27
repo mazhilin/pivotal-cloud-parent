@@ -1,11 +1,14 @@
 package com.pivotal.cloud.boot.pojo;
 
 import com.github.pagehelper.Page;
+import com.google.common.collect.Lists;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.AbstractList;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +24,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @ApiModel(value = "PageResponse<T>",description = "分页Response响应结果统一实体")
-public final class PageResponse<T> implements Serializable {
+public final class PageResponse<T> extends AbstractList<T> implements Serializable {
 
     private static final long serialVersionUID = -1594861375090801138L;
     /**
@@ -54,6 +57,9 @@ public final class PageResponse<T> implements Serializable {
      */
     private int pageCurrent;
 
+    public PageResponse() {
+        elements = Lists.newArrayList();
+    }
 
     public PageResponse(List<T> list) {
         if (list != null) {
@@ -74,5 +80,23 @@ public final class PageResponse<T> implements Serializable {
                 this.pageCurrent = list.size();
             }
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @param index
+     *
+     * @throws IndexOutOfBoundsException
+     *         {@inheritDoc}
+     */
+    @Override
+    public T get(int index) {
+        return elements.get(index);
+    }
+
+    @Override
+    public int size() {
+        return elements.size();
     }
 }

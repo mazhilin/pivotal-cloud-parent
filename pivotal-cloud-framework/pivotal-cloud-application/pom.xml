@@ -30,7 +30,6 @@
     <modules>
         <module>pivotal-cloud-application-boot</module>
         <module>pivotal-cloud-application-identity</module>
-        <module>pivotal-cloud-application-management</module>
         <module>pivotal-cloud-application-protocol</module>
         <module>pivotal-cloud-application-security</module>
         <module>pivotal-cloud-application-template</module>

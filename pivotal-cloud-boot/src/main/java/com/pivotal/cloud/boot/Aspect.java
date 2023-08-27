@@ -1,5 +1,6 @@
 package com.pivotal.cloud.boot;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.core.Ordered;
 
@@ -32,7 +33,7 @@ public interface Aspect extends Ordered {
      * @return 返回结果
      * @throws Throwable 异常消息
      */
-    default void aspectBefore(ProceedingJoinPoint point) throws Throwable {
+    default void aspectBefore(JoinPoint point) throws Throwable {
     }
 
     /**
