@@ -19,7 +19,7 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@com.pivotal.cloud.datasource.boot.annotation.DynamicDatasource(DatasourceGroup.MASTER)
+@DynamicDatasource(DatasourceGroup.MASTER)
 public @interface Master {
 
 }

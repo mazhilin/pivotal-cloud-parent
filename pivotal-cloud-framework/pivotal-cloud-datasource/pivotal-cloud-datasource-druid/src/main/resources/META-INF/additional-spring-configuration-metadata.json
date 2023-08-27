@@ -434,7 +434,7 @@
       "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
       "name": "pivotal.cloud.dynamic.druid.datasource.strategy",
       "description": "多数据源选择算法clazz，默认负载均衡算法",
-      "type": "java.lang.Class<? extends com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceStrategy>"
+      "type": "java.lang.Class<? extends com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy>"
     },
     {
       "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
