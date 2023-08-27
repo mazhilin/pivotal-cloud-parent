@@ -16,6 +16,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>com.pivotal.cloud</groupId>
             <artifactId>pivotal-cloud-boot</artifactId>
         </dependency>
@@ -42,12 +48,7 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>compile</scope>
-            <optional>true</optional>
-        </dependency>
+
     </dependencies>
 
 </project>
