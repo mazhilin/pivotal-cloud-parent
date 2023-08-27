@@ -1,20 +1,19 @@
 package com.pivotal.cloud.datasource.boot.utils;
-
 /**
- * @className: com.pivotal.cloud.datasource.boot.utils.Base64
- * @title: 封装SamrtCloud项目-Base64类
- * @description: <p>
- *         SamrtCloud项目-Base64
- *         </p>
- * @content: Base64
- * @author: Powered by marklin
- * @datetime: 2023-06-02 02:14
+ * @packageName com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil
+ * @projectName: pivotalCloud
+ * @className: Base64ToolsUtil
+ * @title: 封装pivotalCloud项目-Base64类
+ * @content: Base64ToolsUtil
+ * @description: pivotalCloud项目-Base64类,主要用作Base64。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 14:16
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 SamrtCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 public class Base64ToolsUtil {
     /**
-     * This array is a lookup table that translates 6-bit positive integer index values into their "Base64 Alphabet" equivalents as specified
+     * This array is a lookup table that translates 6-bit positive integer index values into their "Base64ToolsUtil Alphabet" equivalents as specified
      * in Table 1 of RFC 2045.
      */
     private static final char[] intToBase64 = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
@@ -25,8 +24,8 @@ public class Base64ToolsUtil {
             '1', '2',
             '3', '4', '5', '6', '7', '8', '9', '+', '/'};
     /**
-     * This array is a lookup table that translates 6-bit positive integer index values into their "Alternate Base64 Alphabet" equivalents.
-     * This is NOT the real Base64 Alphabet as per in Table 1 of RFC 2045. This alternate alphabet does not use the capital letters. It is
+     * This array is a lookup table that translates 6-bit positive integer index values into their "Alternate Base64ToolsUtil Alphabet" equivalents.
+     * This is NOT the real Base64ToolsUtil Alphabet as per in Table 1 of RFC 2045. This alternate alphabet does not use the capital letters. It is
      * designed for use in environments where "case folding" occurs.
      */
     private static final char[] intToAltBase64 = {'!', '"', '#', '$', '%', '&', '\'', '(', ')', ',',
@@ -37,8 +36,8 @@ public class Base64ToolsUtil {
             '1', '2',
             '3', '4', '5', '6', '7', '8', '9', '+', '?'};
     /**
-     * This array is a lookup table that translates unicode characters drawn from the "Base64 Alphabet" (as specified in Table 1 of RFC 2045)
-     * into their 6-bit positive integer equivalents. Characters that are not in the Base64 alphabet but fall within the bounds of the array
+     * This array is a lookup table that translates unicode characters drawn from the "Base64ToolsUtil Alphabet" (as specified in Table 1 of RFC 2045)
+     * into their 6-bit positive integer equivalents. Characters that are not in the Base64ToolsUtil alphabet but fall within the bounds of the array
      * are translated to -1.
      */
     private static final byte[] base64ToInt = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
@@ -65,7 +64,7 @@ public class Base64ToolsUtil {
             22, 23, 24, 25};
 
     /**
-     * @param a Translates the specified byte array into a Base64 string as per Preferences.put(byte[]).
+     * @param a Translates the specified byte array into a Base64ToolsUtil string as per Preferences.put(byte[]).
      * @return str
      */
     public static String byteArrayToBase64(byte[] a) {
@@ -73,7 +72,7 @@ public class Base64ToolsUtil {
     }
 
     /**
-     * @param a Translates the specified byte array into an "alternate representation" Base64 string. This non-standard variant uses an
+     * @param a Translates the specified byte array into an "alternate representation" Base64ToolsUtil string. This non-standard variant uses an
      *          alphabet that does not contain the uppercase alphabetic characters, which makes it suitable for use in situations where
      *          case-folding occurs.
      * @return str
@@ -90,7 +89,7 @@ public class Base64ToolsUtil {
         StringBuilder result = new StringBuilder(resultLen);
         char[] intToAlpha = (alternate ? intToAltBase64 : intToBase64);
 
-        // Translate all full groups from byte array elements to Base64
+        // Translate all full groups from byte array elements to Base64ToolsUtil
         int inCursor = 0;
         for (int i = 0; i < numFullGroups; i++) {
             int byte0 = a[inCursor++] & 0xff;
@@ -121,7 +120,7 @@ public class Base64ToolsUtil {
     }
 
     /**
-     * @param s Translates the specified Base64 string (as per Preferences.get(byte[])) into a byte array.
+     * @param s Translates the specified Base64ToolsUtil string (as per Preferences.get(byte[])) into a byte array.
      * @return byte[]
      */
     public static byte[] base64ToByteArray(String s) {
@@ -129,7 +128,7 @@ public class Base64ToolsUtil {
     }
 
     /**
-     * @param s Translates the specified "alternate representation" Base64 string into a byte array.
+     * @param s Translates the specified "alternate representation" Base64ToolsUtil string into a byte array.
      * @return byte[]
      */
     public static byte[] altBase64ToByteArray(String s) {
@@ -185,7 +184,7 @@ public class Base64ToolsUtil {
     /**
      * Translates the specified character, which is assumed to be in the "Base 64 Alphabet" into its equivalent 6-bit positive integer.
      *
-     * @throw IllegalArgumentException or ArrayOutOfBoundsException if c is not in the Base64 Alphabet.
+     * @throw IllegalArgumentException or ArrayOutOfBoundsException if c is not in the Base64ToolsUtil Alphabet.
      */
     private static int base64toInt(char c, byte[] alphaToInt) {
         int result = alphaToInt[c];

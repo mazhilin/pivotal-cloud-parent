@@ -16,14 +16,50 @@
     },
     {
       "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
-      "name": "pivotal.cloud.dynamic.hikari.datasource.datasource",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.database",
       "description": "每一个数据源",
       "type": "java.util.Map<java.lang.String,com.pivotal.cloud.datasource.boot.properties.DatasourceProperties>"
     },
     {
       "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
-      "name": "pivotal.cloud.dynamic.hikari.datasource.druid",
-      "description": "Druid全局参数配置",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config",
+      "description": "hikari全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config.min-idle",
+      "description": "hikari全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config.idle-timeout",
+      "description": "hikari全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config.max-pool-size",
+      "description": "hikari全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config.max-lifetime",
+      "description": "hikari全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config.connection-timeout",
+      "description": "hikari全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.hikari.properties.DynamicHikariDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.hikari.datasource.pool-config.connection-test-query",
+      "description": "hikari全局参数配置",
       "type": "com.pivotal.cloud.datasource.boot.config.HikaricpConfig"
     },
     {

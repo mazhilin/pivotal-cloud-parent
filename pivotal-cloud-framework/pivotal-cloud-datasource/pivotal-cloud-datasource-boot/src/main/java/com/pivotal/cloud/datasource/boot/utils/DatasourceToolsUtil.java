@@ -9,16 +9,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.utils.DatasourceToolsUtil
- * @title: 封装pivotalCloud项目-DatasourceToolsUtil类
- * @description: <p>
- *         pivotalCloud项目-DatasourceToolsUtil
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.utils.DatasourceToolsUtil
+ * @projectName: CooaaCloud
+ * @className: DatasourceToolsUtil
+ * @title: 封装CooaaCloud项目-DatasourceConfigToolUtil类
  * @content: DatasourceToolsUtil
- * @author: Powered by marklin
- * @datetime: 2023-06-02 02:01
+ * @description: CooaaCloud项目-DatasourceConfigToolUtil类,主要用作DatasourceConfigToolUtil。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 14:18
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 CooaaCloud Systems Incorporated. All rights reserved.
  */
 public class DatasourceToolsUtil {
     private static final Pattern LINE_PATTERN = Pattern.compile("-(\\w)");
@@ -126,5 +126,27 @@ public class DatasourceToolsUtil {
             }
         }
         return value;
+    }
+
+    public static boolean hasLength(CharSequence str) {
+        return (str != null && str.length() > 0);
+    }
+
+    public static boolean hasLength(String str) {
+        return hasLength((CharSequence) str);
+    }
+
+    public static boolean hasText(CharSequence str) {
+        if (!hasLength(str)) {
+            return false;
+        }
+
+        int strLen = str.length();
+        for (int i = 0; i < strLen; i++) {
+            if (!Character.isWhitespace(str.charAt(i))) {
+                return true;
+            }
+        }
+        return false;
     }
 }

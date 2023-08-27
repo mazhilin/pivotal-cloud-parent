@@ -1,5 +1,6 @@
 package com.pivotal.cloud.datasource.boot.dynamic;
 
+
 import com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceStrategy;
 import lombok.Data;
 
@@ -52,7 +53,7 @@ public class DynamicGroupDatasource {
     }
 
     public String defineDatasource() {
-        return dynamicStrategy.definiteDatasource(new ArrayList<>(datasourceMap.keySet()));
+        return dynamicStrategy.defineDatasource(new ArrayList<>(datasourceMap.keySet()));
     }
 
     public DataSource finalizeDatasource() {

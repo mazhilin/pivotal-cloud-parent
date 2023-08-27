@@ -1,14 +1,14 @@
 package com.pivotal.cloud.datasource.boot.constants;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.constants.Propagations
- * @title: 封装pivotalCloud项目-Propagations类
- * @description: <p>
- *         pivotalCloud项目-Propagations
- *         </p>
- * @content: Propagations
- * @author: Powered by marklin
- * @datetime: 2023-06-04 00:56
+ * @packageName com.pivotal.cloud.datasource.boot.constants.Propagation
+ * @projectName: pivotalCloud
+ * @className: Propagation
+ * @title: 封装pivotalCloud项目-Propagation类
+ * @content: Propagation
+ * @description: pivotalCloud项目-Propagation类,主要用作Propagation。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:17
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

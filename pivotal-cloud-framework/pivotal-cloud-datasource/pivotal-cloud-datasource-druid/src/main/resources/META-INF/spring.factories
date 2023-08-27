@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.pivotal.cloud.datasource.druid.configuration.EnableDynamicDruidDatasourceAutoConfiguration
+  com.pivotal.cloud.datasource.druid.configuration.EnableDruidAutoConfiguration

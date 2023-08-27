@@ -3,20 +3,19 @@ package com.pivotal.cloud.datasource.boot.properties;
 import lombok.Data;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.properties.DatasourceInitProperties
+ * @packageName com.pivotal.cloud.datasource.boot.properties.DatasourceInitProperties
+ * @projectName: pivotalCloud
+ * @className: DatasourceInitProperties
  * @title: 封装pivotalCloud项目-DatasourceInitProperties类
- * @description: <p>
- *         pivotalCloud项目-DatasourceInitProperties
- *         </p>
  * @content: DatasourceInitProperties
- * @author: Powered by marklin
- * @datetime: 2023-06-02 03:22
+ * @description: pivotalCloud项目-DatasourceInitProperties类,主要用作DatasourceInitProperties。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 10:46
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Data
 public class DatasourceInitProperties {
-
     /**
      * 自动运行的建表脚本
      */

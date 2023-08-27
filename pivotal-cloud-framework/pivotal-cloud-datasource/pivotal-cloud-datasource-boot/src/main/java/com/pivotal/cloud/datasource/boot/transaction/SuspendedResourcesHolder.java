@@ -3,14 +3,14 @@ package com.pivotal.cloud.datasource.boot.transaction;
 import javax.annotation.Nonnull;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.transaction.SuspendedResourcesHolder
+ * @packageName com.pivotal.cloud.datasource.boot.transaction.SuspendedResourcesHolder
+ * @projectName: pivotalCloud
+ * @className: SuspendedResourcesHolder
  * @title: 封装pivotalCloud项目-SuspendedResourcesHolder类
- * @description: <p>
- *         pivotalCloud项目-SuspendedResourcesHolder
- *         </p>
  * @content: SuspendedResourcesHolder
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:50
+ * @description: pivotalCloud项目-SuspendedResourcesHolder类,主要用作SuspendedResourcesHolder。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:12
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

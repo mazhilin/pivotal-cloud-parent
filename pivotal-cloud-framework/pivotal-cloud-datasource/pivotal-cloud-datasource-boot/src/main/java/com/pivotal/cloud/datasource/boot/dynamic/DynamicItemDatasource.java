@@ -1,6 +1,5 @@
 package com.pivotal.cloud.datasource.boot.dynamic;
 
-
 import com.pivotal.cloud.datasource.boot.constants.SeataMode;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +15,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.dynamic.DynamicItemDatasource
+ * @packageName com.pivotal.cloud.datasource.boot.dynamic.DynamicItemDatasource
  * @projectName: pivotalCloud
  * @className: DynamicItemDatasource
  * @title: 封装pivotalCloud项目-DynamicItemDatasource类

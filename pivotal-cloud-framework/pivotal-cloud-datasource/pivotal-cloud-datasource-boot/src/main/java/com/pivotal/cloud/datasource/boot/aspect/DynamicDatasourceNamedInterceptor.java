@@ -17,14 +17,14 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceNamedInterceptor
+ * @packageName com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceNamedInterceptor
+ * @projectName: pivotalCloud
+ * @className: DynamicDatasourceNamedInterceptor
  * @title: 封装pivotalCloud项目-DynamicDatasourceNamedInterceptor类
- * @description: <p>
- *         pivotalCloud项目-DynamicDatasourceNamedInterceptor
- *         </p>
  * @content: DynamicDatasourceNamedInterceptor
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:23
+ * @description: pivotalCloud项目-DynamicDatasourceNamedInterceptor类,主要用作DynamicDatasourceNamedInterceptor。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:25
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
@@ -100,7 +100,7 @@ public class DynamicDatasourceNamedInterceptor implements MethodInterceptor {
 
     private String definiteDatasource(MethodInvocation invocation) {
         String key = findDsKey(invocation);
-        return (key != null && key.startsWith(DYNAMIC_PREFIX)) ? processor.definite(invocation, key) : key;
+        return (key != null && key.startsWith(DYNAMIC_PREFIX)) ? processor.definiteDatasource(invocation, key) : key;
     }
 
     private String findDsKey(MethodInvocation invocation) {

@@ -1,26 +1,28 @@
 package com.pivotal.cloud.datasource.boot.aspect;
 
 import com.pivotal.cloud.datasource.boot.annotation.DynamicDatasourceTransactional;
-import com.pivotal.cloud.datasource.boot.transaction.TransactionalExecutor;
+import com.pivotal.cloud.datasource.boot.transaction.TransactionInfo;
 import com.pivotal.cloud.datasource.boot.transaction.TransactionTemplate;
-import com.pivotal.cloud.datasource.boot.utils.TransactionInfo;
+import com.pivotal.cloud.datasource.boot.transaction.TransactionalExecutor;
+import lombok.extern.slf4j.Slf4j;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 import java.lang.reflect.Method;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceTransactionInterceptor
- * @title: 封装pivotalCloud项目-DynamicDatasourceTransactionInterceptor类
- * @description: <p>
- *         pivotalCloud项目-DynamicDatasourceTransactionInterceptor
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceTransactionInterceptor
+ * @projectName: pivotalCloud
+ * @className: DynamicDatasourceTransactionInterceptor
+ * @title: 封装pivotalCloud项目-DynamicDatasourceTransactionInterceptor 类
  * @content: DynamicDatasourceTransactionInterceptor
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:24
+ * @description: pivotalCloud项目-DynamicDatasourceTransactionInterceptor类,主要用作DynamicDatasourceTransactionInterceptor。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:27
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
+@Slf4j
 public class DynamicDatasourceTransactionInterceptor implements MethodInterceptor {
     private final TransactionTemplate template = new TransactionTemplate();
 

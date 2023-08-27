@@ -1,8 +1,9 @@
 package com.pivotal.cloud.datasource.boot.dynamic;
 
+
 import com.pivotal.cloud.datasource.boot.holder.DynamicDatasourceContextHolder;
-import com.pivotal.cloud.datasource.boot.transaction.ConnectionProxy;
 import com.pivotal.cloud.datasource.boot.transaction.ConnectionFactory;
+import com.pivotal.cloud.datasource.boot.transaction.ConnectionProxy;
 import com.pivotal.cloud.datasource.boot.transaction.TransactionContext;
 import org.springframework.util.StringUtils;
 

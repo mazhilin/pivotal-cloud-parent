@@ -22,7 +22,6 @@ import java.util.List;
  * @copyright: Copyright © 2018-2023 PivotalCloud Systems Incorporated. All rights reserved.
  */
 @Data
-@NoArgsConstructor
 @ApiModel(value = "PageResponse<T>",description = "分页Response响应结果统一实体")
 public final class PageResponse<T> extends AbstractList<T> implements Serializable {
 

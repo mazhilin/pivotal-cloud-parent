@@ -12,16 +12,16 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.transaction.ConnectionFactory
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.transaction.ConnectionFactory
+ * @projectName: pivotalCloud
  * @className: ConnectionFactory
- * @title: 封装CoocaaCloud项目-ConnectionFactory类
+ * @title: 封装pivotalCloud项目-ConnectionFactory类
  * @content: ConnectionFactory
- * @description: CoocaaCloud项目-ConnectionFactory类,主要用作ConnectionFactory。
+ * @description: pivotalCloud项目-ConnectionFactory类,主要用作ConnectionFactory。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 12:39
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 public class ConnectionFactory {
     private static final ThreadLocal<Map<String, Map<String, ConnectionProxy>>> CONNECTION_HOLDER =
@@ -152,7 +152,7 @@ public class ConnectionFactory {
             } else {
                 List<ConnectionProxy> markedConnectionProxy = new ArrayList<>();
                 for (SavePointHolder savePointHolder : savePointHolders) {
-                    ConnectionProxy connectionProxy = savePointHolder.getConnectionProxy();
+                  ConnectionProxy connectionProxy = savePointHolder.getConnectionProxy();
                     markedConnectionProxy.add(connectionProxy);
                     savePointHolder.conversionSavePointHolder();
                 }

@@ -3,16 +3,16 @@ package com.pivotal.cloud.datasource.boot.transaction;
 import org.springframework.util.StringUtils;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.transaction.TransactionContext
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.transaction.TransactionContext
+ * @projectName: pivotalCloud
  * @className: TransactionContext
- * @title: 封装CoocaaCloud项目-TransactionContext类
+ * @title: 封装pivotalCloud项目-TransactionContext类
  * @content: TransactionContext
- * @description: CoocaaCloud项目-TransactionContext类,主要用作TransactionContext。
+ * @description: pivotalCloud项目-TransactionContext类,主要用作TransactionContext。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 12:49
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 public class TransactionContext {
 

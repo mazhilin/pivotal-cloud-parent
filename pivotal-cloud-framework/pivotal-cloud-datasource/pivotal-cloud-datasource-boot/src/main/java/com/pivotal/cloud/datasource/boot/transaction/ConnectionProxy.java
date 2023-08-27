@@ -1,23 +1,24 @@
 package com.pivotal.cloud.datasource.boot.transaction;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.sql.*;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 import java.util.concurrent.Executor;
-import lombok.extern.slf4j.Slf4j;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.transaction.ConnectionProxy
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.transaction.ConnectionProxy
+ * @projectName: pivotalCloud
  * @className: ConnectionProxy
- * @title: 封装CoocaaCloud项目-ConnectionProxy类
+ * @title: 封装pivotalCloud项目-ConnectionProxy类
  * @content: ConnectionProxy
- * @description: CoocaaCloud项目-ConnectionProxy类,主要用作ConnectionProxy。
+ * @description: pivotalCloud项目-ConnectionProxy类,主要用作ConnectionProxy。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 12:45
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 public class ConnectionProxy implements Connection {
@@ -335,10 +336,10 @@ public class ConnectionProxy implements Connection {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof ConnectionProxy)) {
+    if (!(o instanceof com.pivotal.cloud.datasource.boot.transaction.ConnectionProxy)) {
       return false;
     }
-    ConnectionProxy that = (ConnectionProxy) o;
+    com.pivotal.cloud.datasource.boot.transaction.ConnectionProxy that = (com.pivotal.cloud.datasource.boot.transaction.ConnectionProxy) o;
     return Objects.equals(connection, that.connection) && Objects.equals(ds, that.ds);
   }
 

@@ -5,14 +5,14 @@ import lombok.Data;
 import java.util.Properties;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.config.BeecpConfig
+ * @packageName com.pivotal.cloud.datasource.boot.config.BeecpConfig
+ * @projectName: pivotalCloud
+ * @className: BeecpConfig
  * @title: 封装pivotalCloud项目-BeecpConfig类
- * @description: <p>
- *         pivotalCloud项目-BeecpConfig
- *         </p>
- * @content: BeecpConfig
- * @author: Powered by marklin
- * @datetime: 2023-06-02 03:31
+ * @content: BeecpConfig-Beecp数据库连接池配置属性类
+ * @description: pivotalCloud项目-BeecpConfig类,主要用作BeecpConfig-Beecp数据库连接池配置属性类。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 9:59
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

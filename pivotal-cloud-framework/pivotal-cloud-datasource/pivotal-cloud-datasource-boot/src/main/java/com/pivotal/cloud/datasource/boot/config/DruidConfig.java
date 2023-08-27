@@ -5,16 +5,16 @@ import lombok.Data;
 import java.util.*;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.config.DruidConfig
- * @title: 封装pivotalCloud项目-DruidConfig类
- * @description: <p>
- *         pivotalCloud项目-DruidConfig
- *         </p>
- * @content: DruidConfig
- * @author: Powered by marklin
- * @datetime: 2023-06-02 03:26
+ * @packageName com.pivotal.cloud.datasource.boot.config.DruidConfig
+ * @projectName: CooocaaCloud
+ * @className: DruidConfig
+ * @title: 封装CooocaaCloud项目-DruidConfig类
+ * @content: DruidConfig-Druid数据库连连接池属性配置类
+ * @description: CooocaaCloud项目-DruidConfig类,主要用作DruidConfig-Druid数据库连连接池属性配置类。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 10:01
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 CooocaaCloud Systems Incorporated. All rights reserved.
  */
 @Data
 public class DruidConfig {

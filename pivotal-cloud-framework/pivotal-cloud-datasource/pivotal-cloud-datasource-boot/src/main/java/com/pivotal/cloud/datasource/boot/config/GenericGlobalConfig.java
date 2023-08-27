@@ -1,5 +1,6 @@
 package com.pivotal.cloud.datasource.boot.config;
 
+
 import com.pivotal.cloud.datasource.boot.constants.SeataMode;
 import com.pivotal.cloud.datasource.boot.utils.SecretCryptoUtil;
 import lombok.Getter;
@@ -7,14 +8,14 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.config.GenericGlobalConfig
+ * @packageName com.pivotal.cloud.datasource.boot.config.GenericGlobalConfig
+ * @projectName: pivotalCloud
+ * @className: GenericGlobalConfig
  * @title: 封装pivotalCloud项目-GenericGlobalConfig类
- * @description: <p>
- *         pivotalCloud项目-GenericGlobalConfig
- *         </p>
- * @content: GenericGlobalConfig-通用全局配置类
- * @author: Powered by marklin
- * @datetime: 2023-06-03 01:13
+ * @content: GenericGlobalConfig
+ * @description: pivotalCloud项目-GenericGlobalConfig类,主要用作GenericGlobalConfig。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 17:35
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
@@ -27,7 +28,6 @@ public class GenericGlobalConfig {
      */
     private Boolean lazy = false;
     /**
-     * /**
      * 是否使用p6spy输出，默认不输出
      */
     private Boolean p6spy = false;

@@ -16,14 +16,14 @@ import java.security.spec.RSAPublicKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.utils.SecretCryptoUtil
+ * @packageName com.pivotal.cloud.datasource.boot.utils.SecretCryptoUtil
+ * @projectName: pivotalCloud
+ * @className: SecretCryptoUtil
  * @title: 封装pivotalCloud项目-SecretCryptoUtil类
- * @description: <p>
- *         pivotalCloud项目-SecretCryptoUtil
- *         </p>
  * @content: SecretCryptoUtil
- * @author: Powered by marklin
- * @datetime: 2023-06-02 02:14
+ * @description: pivotalCloud项目-SecretCryptoUtil类,主要用作SecretCryptoUtil。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 14:21
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
@@ -70,7 +70,7 @@ public class SecretCryptoUtil {
         }
 
         try {
-            byte[] publicKeyBytes = Base64ToolsUtil.base64ToByteArray(publicKeyText);
+            byte[] publicKeyBytes = com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil.base64ToByteArray(publicKeyText);
             X509EncodedKeySpec x509KeySpec = new X509EncodedKeySpec(
                     publicKeyBytes);
 
@@ -133,7 +133,7 @@ public class SecretCryptoUtil {
             return cipherText;
         }
 
-        byte[] cipherBytes = Base64ToolsUtil.base64ToByteArray(cipherText);
+        byte[] cipherBytes = com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil.base64ToByteArray(cipherText);
         byte[] plainBytes = cipher.doFinal(cipherBytes);
 
         return new String(plainBytes);
@@ -148,7 +148,7 @@ public class SecretCryptoUtil {
             key = DEFAULT_PRIVATE_KEY_STRING;
         }
 
-        byte[] keyBytes = Base64ToolsUtil.base64ToByteArray(key);
+        byte[] keyBytes = com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil.base64ToByteArray(key);
         return encrypt(keyBytes, plainText);
     }
 
@@ -168,7 +168,7 @@ public class SecretCryptoUtil {
             cipher = Cipher.getInstance("RSA");
             cipher.init(Cipher.ENCRYPT_MODE, fakePublicKey);
         }
-        return Base64ToolsUtil.byteArrayToBase64(cipher.doFinal(plainText.getBytes(StandardCharsets.UTF_8)));
+        return com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil.byteArrayToBase64(cipher.doFinal(plainText.getBytes(StandardCharsets.UTF_8)));
     }
 
     public static byte[][] genKeyPairBytes(int keySize) {
@@ -190,8 +190,8 @@ public class SecretCryptoUtil {
     public static String[] genKeyPair(int keySize) {
         byte[][] keyPairBytes = genKeyPairBytes(keySize);
         String[] keyPairs = new String[2];
-        keyPairs[0] = Base64ToolsUtil.byteArrayToBase64(keyPairBytes[0]);
-        keyPairs[1] = Base64ToolsUtil.byteArrayToBase64(keyPairBytes[1]);
+        keyPairs[0] = com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil.byteArrayToBase64(keyPairBytes[0]);
+        keyPairs[1] = com.pivotal.cloud.datasource.boot.utils.Base64ToolsUtil.byteArrayToBase64(keyPairBytes[1]);
         return keyPairs;
     }
 }

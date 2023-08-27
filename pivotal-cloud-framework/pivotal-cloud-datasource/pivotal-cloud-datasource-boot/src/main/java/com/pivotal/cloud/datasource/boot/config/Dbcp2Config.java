@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.config.Dbcp2Config
+ * @packageName com.pivotal.cloud.datasource.boot.config.Dbcp2Config
+ * @projectName: pivotalCloud
+ * @className: Dbcp2Config
  * @title: 封装pivotalCloud项目-Dbcp2Config类
- * @description: <p>
- *         pivotalCloud项目-Dbcp2Config
- *         </p>
- * @content: Dbcp2Config
- * @author: Powered by marklin
- * @datetime: 2023-06-02 03:32
+ * @content: Dbcp2Config-Dbcp2数据库连接池属性类
+ * @description: pivotalCloud项目-Dbcp2Config类,主要用作Dbcp2Config-Dbcp2数据库连接池属性类。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 10:00
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

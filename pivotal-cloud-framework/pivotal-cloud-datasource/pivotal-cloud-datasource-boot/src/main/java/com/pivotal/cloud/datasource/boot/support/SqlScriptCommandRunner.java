@@ -12,14 +12,14 @@ import org.springframework.util.StringUtils;
 import javax.sql.DataSource;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.support.SqlScriptCommandRunner
+ * @packageName com.pivotal.cloud.datasource.boot.support.SqlScriptCommandRunner
+ * @projectName: pivotalCloud
+ * @className: SqlScriptCommandRunner
  * @title: 封装pivotalCloud项目-SqlScriptCommandRunner类
- * @description: <p>
- *         pivotalCloud项目-SqlScriptCommandRunner
- *         </p>
  * @content: SqlScriptCommandRunner
- * @author: Powered by marklin
- * @datetime: 2023-06-03 01:49
+ * @description: pivotalCloud项目-SqlScriptCommandRunner类,主要用作SqlScriptCommandRunner。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 14:54
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

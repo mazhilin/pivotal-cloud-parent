@@ -1,6 +1,6 @@
 package com.pivotal.cloud.datasource.boot.creator;
 
-import com.pivotal.cloud.datasource.boot.exception.DatasourceException;
+import com.pivotal.cloud.datasource.boot.exception.DynamicDatasourceRoutingException;
 import com.pivotal.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,19 +8,20 @@ import javax.sql.DataSource;
 import java.lang.reflect.Method;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.builder.BasicDatasourceCreatorBuilder
- * @title: 封装pivotalCloud项目-BasicDatasourceCreatorBuilder类
- * @description: <p>
- *         pivotalCloud项目-BasicDatasourceCreatorBuilder
- *         </p>
- * @content: BasicDatasourceCreatorBuilder
- * @author: Powered by marklin
- * @datetime: 2023-06-02 04:15
+ * @packageName com.pivotal.cloud.datasource.boot.creator.BasicDatasourceCreator
+ * @projectName: pivotalCloud
+ * @className: BasicDatasourceCreator
+ * @title: 封装pivotalCloud项目-BasicDatasourceCreator类
+ * @content: BasicDatasourceCreator
+ * @description: pivotalCloud项目-BasicDatasourceCreator类,主要用作BasicDatasourceCreator。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-05 19:57
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 public class BasicDatasourceCreator implements DatasourceCreator {
+
     private static Method createMethod;
     private static Method typeMethod;
     private static Method urlMethod;
@@ -57,13 +58,10 @@ public class BasicDatasourceCreator implements DatasourceCreator {
             }
         }
     }
-
     /**
-     * 通过属性创建数据源
+     * 通过属性文件创建数据源
      *
-     * @param properties
-     *         数据源属性
-     *
+     * @param properties 数据源属性
      * @return 被创建的数据源
      */
     @Override
@@ -77,21 +75,21 @@ public class BasicDatasourceCreator implements DatasourceCreator {
             Object o6 = driverClassNameMethod.invoke(o5, properties.getDriverClassName());
             return (DataSource) buildMethod.invoke(o6);
         } catch (Exception e) {
-            throw new DatasourceException(
-                    "dynamic-datasource create basic database named " + properties.getPoolName() + " error");
+      throw new DynamicDatasourceRoutingException(
+          "dynamic-datasource create basic database named "
+              + properties.getPoolName()
+              + " error");
         }
     }
 
     /**
      * 当前创建器是否支持根据此属性创建
      *
-     * @param properties
-     *         数据源属性
-     *
+     * @param properties 数据源属性
      * @return 是否支持
      */
     @Override
     public boolean support(DatasourceProperties properties) {
-        return Boolean.TRUE;
+        return true;
     }
 }

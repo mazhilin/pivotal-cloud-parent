@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.pivotal.cloud.datasource.hikari.configuration.EnableDynamicHikariDatasourceAutoConfiguration
+  com.pivotal.cloud.datasource.hikari.configuration.EnableHikariAutoConfiguration

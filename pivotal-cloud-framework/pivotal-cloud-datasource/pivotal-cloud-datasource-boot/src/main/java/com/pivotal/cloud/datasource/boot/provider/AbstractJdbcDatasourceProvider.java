@@ -1,4 +1,8 @@
 package com.pivotal.cloud.datasource.boot.provider;
+
+
+
+
 import com.pivotal.cloud.datasource.boot.creator.DefaultDatasourceCreator;
 import com.pivotal.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +28,7 @@ import java.util.Map;
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
-public abstract class AbstractJdbcDatasourceProvider extends AbstractDatasourceProvider implements DynamicDatasourceProvider {
+public abstract class AbstractJdbcDatasourceProvider extends com.pivotal.cloud.datasource.boot.provider.AbstractDatasourceProvider implements com.pivotal.cloud.datasource.boot.provider.DynamicDatasourceProvider {
     /**
      * JDBC driver
      */

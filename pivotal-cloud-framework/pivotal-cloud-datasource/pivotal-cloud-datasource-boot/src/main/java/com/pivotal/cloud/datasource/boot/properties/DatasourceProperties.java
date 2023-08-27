@@ -1,31 +1,28 @@
 package com.pivotal.cloud.datasource.boot.properties;
 
+
 import com.pivotal.cloud.datasource.boot.config.BeecpConfig;
 import com.pivotal.cloud.datasource.boot.config.Dbcp2Config;
 import com.pivotal.cloud.datasource.boot.config.DruidConfig;
 import com.pivotal.cloud.datasource.boot.config.HikaricpConfig;
-import com.zaxxer.hikari.HikariConfig;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.sql.DataSource;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.properties.pivotalCloudDatasourceProperties
- * @title: 封装pivotalCloud项目-pivotalCloudDatasourceProperties类
- * @description: <p>
- *         pivotalCloud项目-pivotalCloudDatasourceProperties
- *         </p>
- * @content: pivotalCloudDatasourceProperties
- * @author: Powered by marklin
- * @datetime: 2023-05-27 03:26
+ * @packageName com.pivotal.cloud.datasource.boot.properties.DatasourceProperties
+ * @projectName: pivotalCloud
+ * @className: DatasourceProperties
+ * @title: 封装pivotalCloud项目-DatasourceProperties类
+ * @content: DatasourceProperties
+ * @description: pivotalCloud项目-DatasourceProperties类,主要用作DatasourceProperties。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 10:48
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-
+@Slf4j
 @Data
 public class DatasourceProperties {
     /**
@@ -80,6 +77,15 @@ public class DatasourceProperties {
      * HikariCp参数配置
      */
     private HikaricpConfig hikari = new HikaricpConfig();
+    /**
+     * BeeCp参数配置
+     */
+    private BeecpConfig beecp = new BeecpConfig();
+    /**
+     * DBCP2参数配置
+     */
+    private Dbcp2Config dbcp2 = new Dbcp2Config();
+
     /**
      * 解密公匙(如果未设置默认使用全局的)
      */

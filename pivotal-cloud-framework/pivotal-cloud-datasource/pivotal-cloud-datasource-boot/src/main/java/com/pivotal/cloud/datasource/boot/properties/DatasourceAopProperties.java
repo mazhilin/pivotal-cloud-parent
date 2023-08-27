@@ -4,19 +4,20 @@ import lombok.Data;
 import org.springframework.core.Ordered;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.properties.DatasourceAopProperties
- * @title: 封装pivotalCloud项目-DatasourceAopProperties类
- * @description: <p>
- *         pivotalCloud项目-DatasourceAopProperties
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.properties.DatasourceAopProperties
+ * @projectName: pivotalCloud
+ * @className: DatasourceAopProperties
+ * @title: 封装pivotalCloud项目-DynamicDatasourceAopProperties类
  * @content: DatasourceAopProperties
- * @author: Powered by marklin
- * @datetime: 2023-06-06 01:04
+ * @description: pivotalCloud项目-DynamicDatasourceAopProperties类,主要用作DynamicDatasourceAopProperties。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-05 19:47
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Data
 public class DatasourceAopProperties {
+
     /**
      * enabled default DS annotation default true
      */

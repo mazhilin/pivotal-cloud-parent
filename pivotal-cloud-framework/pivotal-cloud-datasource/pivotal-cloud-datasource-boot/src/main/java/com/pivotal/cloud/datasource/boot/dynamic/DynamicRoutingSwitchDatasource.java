@@ -1,21 +1,15 @@
 package com.pivotal.cloud.datasource.boot.dynamic;
 
 
+
+import com.p6spy.engine.spy.P6DataSource;
 import com.pivotal.cloud.datasource.boot.constants.DatasourceGroup;
-import com.pivotal.cloud.datasource.boot.exception.DynamicDatasourceException;
+import com.pivotal.cloud.datasource.boot.exception.DynamicDatasourceRoutingException;
 import com.pivotal.cloud.datasource.boot.holder.DynamicDatasourceContextHolder;
 import com.pivotal.cloud.datasource.boot.provider.DynamicDatasourceProvider;
 import com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy;
 import com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceStrategy;
-import com.p6spy.engine.spy.P6DataSource;
 import io.seata.rm.datasource.DataSourceProxy;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import javax.sql.DataSource;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.DisposableBean;
@@ -23,6 +17,14 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.util.StringUtils;
+
+import javax.sql.DataSource;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @packageName com.pivotal.cloud.datasource.boot.dynamic.DynamicRoutingSwitchDatasource
@@ -47,23 +49,20 @@ public class DynamicRoutingSwitchDatasource extends AbstractDynamicDatasource im
   /** 分组数据库 */
   private final Map<String, DynamicGroupDatasource> groupDatasources = new ConcurrentHashMap<>();
 
-  @Autowired private List<DynamicDatasourceProvider> providers;
+  @Autowired
+  private List<DynamicDatasourceProvider> providers;
 
   @Setter
   private Class<? extends DynamicDatasourceStrategy> strategy =
       DynamicDatasourceLoadBalanceStrategy.class;
 
-  @Setter
-  private String primary = DatasourceGroup.MASTER;
+  @Setter private String primary = DatasourceGroup.MASTER;
 
-  @Setter
-  private Boolean strict = false;
+  @Setter private Boolean strict = false;
 
-  @Setter
-  private Boolean p6spy = false;
+  @Setter private Boolean p6spy = false;
 
-  @Setter
-  private Boolean seata = false;
+  @Setter private Boolean seata = false;
 
   @Override
   protected DataSource defineDatasource() {
@@ -137,7 +136,7 @@ public class DynamicRoutingSwitchDatasource extends AbstractDynamicDatasource im
       return datasourceMap.get(identifier);
     }
     if (strict) {
-      throw new DynamicDatasourceException("dynamic-datasource could not find a datasource named" + identifier);
+      throw new DynamicDatasourceRoutingException("dynamic-datasource could not find a datasource named" + identifier);
     }
     return buildPrimaryDatasource();
   }
@@ -157,7 +156,7 @@ public class DynamicRoutingSwitchDatasource extends AbstractDynamicDatasource im
     if (groupDatasource != null) {
       return groupDatasource.finalizeDatasource();
     }
-    throw new DynamicDatasourceException("dynamic-datasource can not find primary datasource");
+    throw new DynamicDatasourceRoutingException("dynamic-datasource can not find primary datasource");
   }
 
   /**

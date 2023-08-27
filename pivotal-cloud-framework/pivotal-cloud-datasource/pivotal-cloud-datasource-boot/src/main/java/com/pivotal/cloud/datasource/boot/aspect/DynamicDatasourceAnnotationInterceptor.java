@@ -7,18 +7,18 @@ import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceAnnotationInterceptor
+ * @packageName com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceAnnotationInterceptor
+ * @projectName: pivotalCloud
+ * @className: DynamicDatasourceAnnotationInterceptor
  * @title: 封装pivotalCloud项目-DynamicDatasourceAnnotationInterceptor类
- * @description: <p>
- *         pivotalCloud项目-DynamicDatasourceAnnotationInterceptor
- *         </p>
  * @content: DynamicDatasourceAnnotationInterceptor
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:28
+ * @description: pivotalCloud项目-DynamicDatasourceAnnotationInterceptor类,主要用作DynamicDatasourceAnnotationInterceptor。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:21
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-public class DynamicDatasourceAnnotationInterceptor implements MethodInterceptor {
+public class DynamicDatasourceAnnotationInterceptor  implements MethodInterceptor {
     /**
      * The identification of SPEL.
      */
@@ -46,6 +46,6 @@ public class DynamicDatasourceAnnotationInterceptor implements MethodInterceptor
 
     private String defineDatasource(MethodInvocation invocation) {
         String key = resolver.findKey(invocation.getMethod(), invocation.getThis());
-        return key.startsWith(DYNAMIC_PREFIX) ? processor.definite(invocation, key) : key;
+        return key.startsWith(DYNAMIC_PREFIX) ? processor.definiteDatasource(invocation, key) : key;
     }
 }

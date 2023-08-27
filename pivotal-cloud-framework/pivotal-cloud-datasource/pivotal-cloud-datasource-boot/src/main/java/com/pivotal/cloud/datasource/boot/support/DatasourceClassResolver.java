@@ -14,14 +14,14 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.support.DatasourceClassResolver
+ * @packageName com.pivotal.cloud.datasource.boot.support.DatasourceClassResolver
+ * @projectName: pivotalCloud
+ * @className: DatasourceClassResolver
  * @title: 封装pivotalCloud项目-DatasourceClassResolver类
- * @description: <p>
- *         pivotalCloud项目-DatasourceClassResolver
- *         </p>
  * @content: DatasourceClassResolver
- * @author: Powered by marklin
- * @datetime: 2023-06-03 01:47
+ * @description: pivotalCloud项目-DatasourceClassResolver类,主要用作DatasourceClassResolver。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 17:30
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

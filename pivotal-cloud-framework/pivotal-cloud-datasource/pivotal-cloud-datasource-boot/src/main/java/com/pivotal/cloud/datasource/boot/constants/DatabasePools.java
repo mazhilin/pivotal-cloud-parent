@@ -1,19 +1,17 @@
 package com.pivotal.cloud.datasource.boot.constants;
-
 /**
- * @className: com.pivotal.cloud.datasource.boot.constants.Databses
- * @title: 封装pivotalCloud项目-Databses类
- * @description: <p>
- *         pivotalCloud项目-Databses
- *         </p>
- * @content: Databses
- * @author: Powered by marklin
- * @datetime: 2023-06-02 02:27
+ * @packageName com.pivotal.cloud.datasource.boot.constants.DatabasePools
+ * @projectName: pivotalCloud
+ * @className: DatabasePools
+ * @title: 封装pivotalCloud项目-DatabasePools类
+ * @content: DatabasePools-数据库连接池常量类
+ * @description: pivotalCloud项目-DatabasePools类,主要用作DatabasePools-数据库连接池常量类。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 9:54
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 public final class DatabasePools {
-
     /**
      * Druid数据源
      */

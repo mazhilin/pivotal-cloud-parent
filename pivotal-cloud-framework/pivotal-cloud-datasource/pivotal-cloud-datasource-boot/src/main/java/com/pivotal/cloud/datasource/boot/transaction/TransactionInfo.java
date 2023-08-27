@@ -1,16 +1,17 @@
-package com.pivotal.cloud.datasource.boot.utils;
+package com.pivotal.cloud.datasource.boot.transaction;
+
 
 import com.pivotal.cloud.datasource.boot.constants.Propagation;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.utils.TransactionInfo
+ * @packageName com.pivotal.cloud.datasource.boot.transaction.TransactionInfo
+ * @projectName: pivotalCloud
+ * @className: TransactionInfo
  * @title: 封装pivotalCloud项目-TransactionInfo类
- * @description: <p>
- *         pivotalCloud项目-TransactionInfo
- *         </p>
  * @content: TransactionInfo
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:42
+ * @description: pivotalCloud项目-TransactionInfo类,主要用作TransactionInfo。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:15
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */

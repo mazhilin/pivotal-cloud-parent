@@ -18,33 +18,27 @@ import javax.sql.DataSource;
 import java.util.List;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.creator.DefaultDatasourceCreator
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.creator.DefaultDatasourceCreator
+ * @projectName: pivotalCloud
  * @className: DefaultDatasourceCreator
- * @title: 封装CoocaaCloud项目-DefaultDatasourceCreator类
+ * @title: 封装pivotalCloud项目-DefaultDatasourceCreator类
  * @content: DefaultDatasourceCreator
- * @description: CoocaaCloud项目-DefaultDatasourceCreator类,主要用作DefaultDatasourceCreator。
+ * @description: pivotalCloud项目-DefaultDatasourceCreator类,主要用作DefaultDatasourceCreator。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 11:11
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 @Setter
 public class DefaultDatasourceCreator {
   private List<DatasourceCreator> creators;
 
-  /**
-   * 是否懒加载数据源
-   */
+  /** 是否懒加载数据源 */
   private Boolean lazy = false;
-  /**
-   * /** 是否使用p6spy输出，默认不输出
-   */
+  /** /** 是否使用p6spy输出，默认不输出 */
   private Boolean p6spy = false;
-  /**
-   * 是否使用开启seata，默认不开启
-   */
+  /** 是否使用开启seata，默认不开启 */
   private Boolean seata = false;
 
   /**

@@ -1,5 +1,6 @@
 package com.pivotal.cloud.datasource.boot.provider;
 
+
 import com.pivotal.cloud.datasource.boot.creator.DefaultDatasourceCreator;
 import com.pivotal.cloud.datasource.boot.properties.DatasourceProperties;
 import lombok.extern.slf4j.Slf4j;
@@ -8,16 +9,16 @@ import javax.sql.DataSource;
 import java.util.Map;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.provider.DynamicDatasourceBootProvider
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.provider.DynamicDatasourceBootProvider
+ * @projectName: pivotalCloud
  * @className: DynamicDatasourceBootProvider
- * @title: 封装CoocaaCloud项目-DynamicDatasourceBootProvider类
+ * @title: 封装pivotalCloud项目-DynamicDatasourceBootProvider类
  * @content: DynamicDatasourceBootProvider
- * @description: CoocaaCloud项目-DynamicDatasourceBootProvider类,主要用作DynamicDatasourceBootProvider。
+ * @description: pivotalCloud项目-DynamicDatasourceBootProvider类,主要用作DynamicDatasourceBootProvider。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 19:22
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 public class DynamicDatasourceBootProvider extends AbstractDatasourceProvider{
@@ -27,8 +28,9 @@ public class DynamicDatasourceBootProvider extends AbstractDatasourceProvider{
      */
     private final Map<String, DatasourceProperties> propertiesConfigMap;
 
-    public DynamicDatasourceBootProvider(DefaultDatasourceCreator defaultDataSourceCreator, Map<String, DatasourceProperties> propertiesConfigMap) {
-        super(defaultDataSourceCreator);
+    public DynamicDatasourceBootProvider(DefaultDatasourceCreator datasourceCreator, Map<String,
+            DatasourceProperties> propertiesConfigMap) {
+        super(datasourceCreator);
         this.propertiesConfigMap = propertiesConfigMap;
     }
 

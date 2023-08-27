@@ -20,6 +20,9 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ApiMetadataProperty {
+
+    String value() default StringUtils.EMPTY;
+
     /**
      * 字段属性中文注释
      *

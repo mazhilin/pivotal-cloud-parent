@@ -1,4 +1,4 @@
-package com.pivotal.cloud.datasource.boot.utils;
+package com.pivotal.cloud.datasource.boot.creator;
 
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
@@ -13,20 +13,20 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.utils.MergeConfigCreator
+ * @packageName com.pivotal.cloud.datasource.boot.creator.MergeConfigCreator
+ * @projectName: pivotalCloud
+ * @className: MergeConfigCreator
  * @title: 封装pivotalCloud项目-MergeConfigCreator类
- * @description: <p>
- *         pivotalCloud项目-MergeConfigCreator
- *         </p>
  * @content: MergeConfigCreator
- * @author: Powered by marklin
- * @datetime: 2023-06-02 04:09
+ * @description: pivotalCloud项目-MergeConfigCreator类,主要用作MergeConfigCreator。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-05 14:07
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 @AllArgsConstructor
-public class MergeConfigCreator <C, T>{
+public class MergeConfigCreator<C, T> {
     private final String configName;
 
     private final Class<C> configClazz;
@@ -105,4 +105,5 @@ public class MergeConfigCreator <C, T>{
             log.warn("dynamic-datasource set {} [{}] failed,please check your config", configName, name, ee);
         }
     }
+
 }

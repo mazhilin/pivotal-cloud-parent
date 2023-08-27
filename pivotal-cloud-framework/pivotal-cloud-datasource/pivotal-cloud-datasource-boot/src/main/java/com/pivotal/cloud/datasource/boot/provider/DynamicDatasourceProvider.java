@@ -4,18 +4,18 @@ import javax.sql.DataSource;
 import java.util.Map;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.provider.DynamicDatasourceProvider
+ * @packageName com.pivotal.cloud.datasource.boot.provider.DynamicDatasourceProvider
+ * @projectName: pivotalCloud
+ * @className: DynamicDatasourceProvider
  * @title: 封装pivotalCloud项目-DynamicDatasourceProvider类
- * @description: <p>
- *         pivotalCloud项目-DynamicDatasourceProvider
- *         </p>
  * @content: DynamicDatasourceProvider
- * @author: Powered by marklin
- * @datetime: 2023-06-02 04:50
+ * @description: pivotalCloud项目-DynamicDatasourceProvider类,主要用作DynamicDatasourceProvider。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 10:55
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-public interface DynamicDatasourceProvider {
+public interface DynamicDatasourceProvider extends DatasourceProvider{
     /**
      * 加载所有数据源
      *

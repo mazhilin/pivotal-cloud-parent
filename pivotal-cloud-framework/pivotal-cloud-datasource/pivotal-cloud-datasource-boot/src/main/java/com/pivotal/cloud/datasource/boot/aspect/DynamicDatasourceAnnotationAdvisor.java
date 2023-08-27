@@ -22,18 +22,18 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceAnnotationAdvisor
- * @title: 封装SamrtCloud项目-DynamicDatasourceAnnotationAdvisor类
- * @description: <p>
- *         SamrtCloud项目-DynamicDatasourceAnnotationAdvisor
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceAnnotationAdvisor
+ * @projectName: CooocaaCloud
+ * @className: DynamicDatasourceAnnotationAdvisor
+ * @title: 封装CooocaaCloud项目-DynamicDatasourceAnnotationAdvisor类
  * @content: DynamicDatasourceAnnotationAdvisor
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:22
+ * @description: CooocaaCloud项目-DynamicDatasourceAnnotationAdvisor类,主要用作DynamicDatasourceAnnotationAdvisor。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:22
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 SamrtCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 CooocaaCloud Systems Incorporated. All rights reserved.
  */
-public class DynamicDatasourceAnnotationAdvisor extends AbstractPointcutAdvisor implements BeanFactoryAware {
+public class DynamicDatasourceAnnotationAdvisor extends AbstractPointcutAdvisor implements BeanFactoryAware{
     private final Advice advice;
 
     private final Pointcut pointcut;

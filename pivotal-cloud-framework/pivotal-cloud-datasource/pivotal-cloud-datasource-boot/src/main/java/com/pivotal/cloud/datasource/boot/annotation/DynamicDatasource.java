@@ -1,27 +1,25 @@
 package com.pivotal.cloud.datasource.boot.annotation;
 
+import com.pivotal.cloud.datasource.boot.constants.DatasourceGroup;
+
 import java.lang.annotation.*;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.annotation.DynamicDatasource
- * @title: 封装pivotalCloud项目-DynamicDatasource类
- * @description: <p>
- *         pivotalCloud项目-DynamicDatasource
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.annotation.DynamicDatasource
+ * @projectName: pivotalCloud
+ * @className: DynamicDatasource
+ * @title: 封装pivotalCloud项目-DynamicDataSource类
  * @content: DynamicDatasource
- * @author: Powered by marklin
- * @datetime: 2023-06-02 01:51
+ * @description: pivotalCloud项目-DynamicDataSource类,主要用作DynamicDataSource。
+ * @author: Powered by Marklin
+ * @datetime: 2023-05-29 15:42
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Inherited
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface DynamicDatasource {
-    /**
-     * 数据库组或者数据值- groupName or specific database name or spring SPEL name.
-     * @return 返回数据库组
-     */
-    String value();
+    String value() default DatasourceGroup.MASTER;
 }

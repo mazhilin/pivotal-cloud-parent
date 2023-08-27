@@ -1,5 +1,6 @@
 package com.pivotal.cloud.datasource.druid.config;
 
+
 import com.pivotal.cloud.datasource.boot.annotation.DynamicDatasource;
 import com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceAnnotationAdvisor;
 import com.pivotal.cloud.datasource.boot.aspect.DynamicDatasourceAnnotationInterceptor;
@@ -22,14 +23,14 @@ import org.springframework.context.annotation.Role;
 import org.springframework.context.expression.BeanFactoryResolver;
 
 /**
- * @className: com.pivotal.cloud.datasource.druid.config.DruidDatasourceAspectAutoConfig
+ * @packageName com.pivotal.cloud.datasource.druid.config.DruidDatasourceAspectAutoConfig
+ * @projectName: pivotalCloud
+ * @className: DruidDatasourceAspectAutoConfig
  * @title: 封装pivotalCloud项目-DruidDatasourceAspectAutoConfig类
- * @description: <p>
- *         pivotalCloud项目-DruidDatasourceAspectAutoConfig
- *         </p>
  * @content: DruidDatasourceAspectAutoConfig
- * @author: Powered by marklin
- * @datetime: 2023-06-05 22:59
+ * @description: pivotalCloud项目-DruidDatasourceAspectAutoConfig类,主要用作DruidDatasourceAspectAutoConfig。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 9:52
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
@@ -37,12 +38,11 @@ import org.springframework.context.expression.BeanFactoryResolver;
 @RequiredArgsConstructor
 @EnableConfigurationProperties(DynamicDruidDatasourceProperties.class)
 public class DruidDatasourceAspectAutoConfig {
-
     private final DynamicDruidDatasourceProperties properties;
 
     @Bean
     @ConditionalOnMissingBean
-    public DynamicDatasourceProcessor dsProcessor(BeanFactory beanFactory) {
+    public DynamicDatasourceProcessor dynamicDatasourceProcessor(BeanFactory beanFactory) {
         DynamicDatasourceProcessor header = new DynamicDatasourceHeaderProcessor();
         DynamicDatasourceProcessor session = new DynamicDatasourceSessionProcessor();
         DynamicDatasourceExpressionProcessor expression = new DynamicDatasourceExpressionProcessor();
@@ -55,12 +55,11 @@ public class DruidDatasourceAspectAutoConfig {
     @Role(BeanDefinition.ROLE_INFRASTRUCTURE)
     @Bean
     @ConditionalOnProperty(prefix = DynamicDruidDatasourceProperties.PREFIX + ".aop", name = "enabled", havingValue = "true", matchIfMissing = true)
-    public Advisor dynamicDatasourceAnnotationAdvisor(DynamicDatasourceProcessor processor) {
+    public Advisor dynamicDatasourceAnnotationAdvisor(DynamicDatasourceProcessor dynamicDatasourceProcessor) {
         DatasourceAopProperties aop = properties.getAop();
-        DynamicDatasourceAnnotationInterceptor interceptor = new DynamicDatasourceAnnotationInterceptor(aop.getAllowedPublicOnly(), processor);
+        DynamicDatasourceAnnotationInterceptor interceptor = new DynamicDatasourceAnnotationInterceptor(aop.getAllowedPublicOnly(), dynamicDatasourceProcessor);
         DynamicDatasourceAnnotationAdvisor advisor = new DynamicDatasourceAnnotationAdvisor(interceptor, DynamicDatasource.class);
         advisor.setOrder(aop.getOrder());
         return advisor;
     }
-
 }

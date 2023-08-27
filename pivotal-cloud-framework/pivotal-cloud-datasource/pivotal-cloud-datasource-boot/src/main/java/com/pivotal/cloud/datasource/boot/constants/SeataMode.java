@@ -1,16 +1,15 @@
 package com.pivotal.cloud.datasource.boot.constants;
-
 /**
- * @className: com.pivotal.cloud.datasource.boot.constants.SeataMode
- * @title: 封装pivotalCloud项目-SeataMode类
- * @description: <p>
- *         pivotalCloud项目-SeataMode
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.constants.SeataMode
+ * @projectName:
+ * @className: SeataMode
+ * @title: 封装项目-SeataMode类
  * @content: SeataMode
- * @author: Powered by marklin
- * @datetime: 2023-06-03 01:16
- * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
+ * @description: 项目-SeataMode类,主要用作SeataMode。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 14:50
+ * @version: 1.0.
+ * @copyright: Copyright © 2018-2023 Systems Incorporated. All rights reserved.
  */
 public enum SeataMode {
     /**

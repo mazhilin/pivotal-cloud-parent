@@ -1,9 +1,9 @@
 package com.pivotal.cloud.datasource.boot.dynamic;
 
+import javax.sql.DataSource;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Logger;
-import javax.sql.DataSource;
 
 /**
  * @packageName com.pivotal.cloud.datasource.boot.dynamic.AbstractDatasource

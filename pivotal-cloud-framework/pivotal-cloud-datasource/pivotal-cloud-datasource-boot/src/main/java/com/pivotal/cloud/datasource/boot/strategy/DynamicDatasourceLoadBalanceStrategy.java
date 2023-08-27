@@ -4,19 +4,19 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.strategy.DynamicDatasourceLoadBalanceStrategy
+ * @projectName: pivotalCloud
  * @className: DynamicDatasourceLoadBalanceStrategy
- * @title: 封装CoocaaCloud项目-DynamicDatasourceLoadBalanceStrategy类
+ * @title: 封装pivotalCloud项目-DynamicDatasourceLoadBalanceStrategy类
  * @content: DynamicDatasourceLoadBalanceStrategy
  * @description:
- *     CoocaaCloud项目-DynamicDatasourceLoadBalanceStrategy类,主要用作DynamicDatasourceLoadBalanceStrategy。
+ *     pivotalCloud项目-DynamicDatasourceLoadBalanceStrategy类,主要用作DynamicDatasourceLoadBalanceStrategy。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 18:58
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-public class DynamicDatasourceLoadBalanceStrategy implements DynamicDatasourceStrategy{
+public class DynamicDatasourceLoadBalanceStrategy implements DynamicDatasourceStrategy {
 
     /**
      * 负载均衡计数器
@@ -26,11 +26,13 @@ public class DynamicDatasourceLoadBalanceStrategy implements DynamicDatasourceSt
     /**
      * determine a database from the given dataSources
      *
-     * @param identifiers given dataSources
+     * @param identifiers
+     *         given dataSources
+     *
      * @return final dataSource
      */
     @Override
-    public String definiteDatasource(List<String> identifiers) {
+    public String defineDatasource(List<String> identifiers) {
         return identifiers.get(Math.abs(index.getAndAdd(1) % identifiers.size()));
     }
 }

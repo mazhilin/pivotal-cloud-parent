@@ -1,23 +1,24 @@
 package com.pivotal.cloud.datasource.boot.utils;
 
+import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+
 import com.pivotal.cloud.datasource.boot.transaction.ConnectionFactory;
 import com.pivotal.cloud.datasource.boot.transaction.TransactionContext;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.util.StringUtils;
 
 import java.util.UUID;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.utils.TransactionToolsUtil
- * @title: 封装SamrtCloud项目-TransactionToolsUtil类
- * @description: <p>
- *         SamrtCloud项目-TransactionToolsUtil
- *         </p>
+ * @packageName com.pivotal.cloud.datasource.boot.utils.TransactionToolsUtil
+ * @projectName: pivotalCloud
+ * @className: TransactionToolsUtil
+ * @title: 封装pivotalCloud项目-TransactionToolsUtil类
  * @content: TransactionToolsUtil
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:41
+ * @description: pivotalCloud项目-TransactionToolsUtil类,主要用作TransactionToolsUtil。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:19
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 SamrtCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 public class TransactionToolsUtil {

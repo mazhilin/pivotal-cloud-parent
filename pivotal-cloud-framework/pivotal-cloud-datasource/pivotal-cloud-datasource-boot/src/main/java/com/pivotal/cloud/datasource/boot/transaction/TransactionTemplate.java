@@ -1,9 +1,9 @@
 package com.pivotal.cloud.datasource.boot.transaction;
 
 import com.baomidou.mybatisplus.core.toolkit.ArrayUtils;
+
 import com.pivotal.cloud.datasource.boot.constants.Propagation;
 import com.pivotal.cloud.datasource.boot.exception.TransactionException;
-import com.pivotal.cloud.datasource.boot.utils.TransactionInfo;
 import com.pivotal.cloud.datasource.boot.utils.TransactionToolsUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
@@ -11,21 +11,21 @@ import org.springframework.util.StringUtils;
 import java.util.Objects;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.transaction.TransactionalTemplate
- * @title: 封装pivotalCloud项目-TransactionalTemplate类
- * @description: <p>
- *         pivotalCloud项目-TransactionalTemplate
- *         </p>
- * @content: TransactionalTemplate
- * @author: Powered by marklin
- * @datetime: 2023-06-06 00:38
+ * @packageName com.pivotal.cloud.datasource.boot.transaction.TransactionTemplate
+ * @projectName: pivotalCloud
+ * @className: TransactionTemplate
+ * @title: 封装pivotalCloud项目-TransactionTemplate类
+ * @content: TransactionTemplate
+ * @description: pivotalCloud项目-TransactionTemplate类,主要用作TransactionTemplate。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-06 10:13
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
 public class TransactionTemplate {
     public Object execute(TransactionalExecutor transactionalExecutor) throws Throwable {
-        TransactionInfo transaction = transactionalExecutor.getTransactionInfo();
+       TransactionInfo transaction = transactionalExecutor.getTransactionInfo();
         Propagation propagation = transaction.propagation;
         SuspendedResourcesHolder suspendedResourcesHolder = null;
         try {

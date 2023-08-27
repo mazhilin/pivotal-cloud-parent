@@ -7,18 +7,18 @@ import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import javax.sql.DataSource;
 
 /**
- * @packageName com.coocaa.cloud.datasource.boot.creator.JndiDatasourceCreator
- * @projectName: CoocaaCloud
+ * @packageName com.pivotal.cloud.datasource.boot.creator.JndiDatasourceCreator
+ * @projectName: pivotalCloud
  * @className: JndiDatasourceCreator
- * @title: 封装CoocaaCloud项目-JndiDatasourceCreator类
+ * @title: 封装pivotalCloud项目-JndiDatasourceCreator类
  * @content: JndiDatasourceCreator-JNDI数据源创建实现器
- * @description: CoocaaCloud项目-JndiDatasourceCreator类,主要用作JndiDatasourceCreator-JNDI数据源创建实现器。
+ * @description: pivotalCloud项目-JndiDatasourceCreator类,主要用作JndiDatasourceCreator-JNDI数据源创建实现器。
  * @author: Powered by Marklin
  * @datetime: 2023-06-02 11:07
  * @version: 1.0.0
- * @copyright: Copyright © 2018-2023 CoocaaCloud Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-public class JndiDatasourceCreator implements DatasourceCreator{
+public class JndiDatasourceCreator implements DatasourceCreator {
 
     private static final JndiDataSourceLookup LOOKUP = new JndiDataSourceLookup();
 

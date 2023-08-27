@@ -3,26 +3,390 @@
   "groups": [
     {
       "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties" ,
-      "name": "pivotal.cloud.dynamic.hikari.datasource",
+      "name": "pivotal.cloud.dynamic.druid.datasource",
       "type": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties"
     }
   ],
   "properties": [
     {
       "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
-      "name": "pivotal.cloud.dynamic.hikari.datasource.aop",
+      "name": "pivotal.cloud.dynamic.druid.datasource.aop",
       "description": "aop with default ds annotation",
       "type": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties"
     },
     {
       "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
-      "name": "pivotal.cloud.dynamic.hikari.datasource.datasource",
+      "name": "pivotal.cloud.dynamic.druid.datasource.database",
       "description": "每一个数据源",
       "type": "java.util.Map<java.lang.String,com.pivotal.cloud.datasource.boot.properties.DatasourceProperties>"
     },
     {
       "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
-      "name": "pivotal.cloud.dynamic.druid.datasource.druid",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.initial-size",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.max-active",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.min-idle",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.max-wait",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.time-between-eviction-runs-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.time-between-log-stats-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.keep-alive-between-time-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.stat-sql-max-size",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.min-evictable-idle-time-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.max-evictable-idle-time-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.default-catalog",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.default-auto-commit",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.default-read-only",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.default-transaction-isolation",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.test-while-idle",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.test-on-borrow",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.test-on-return",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.validation-query",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.validation-query-timeout",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.use-global-data-source-stat",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.async-initt",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.filters",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.clear-filters-enable",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.reset-stat-enable",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.not-full-timeout-retry-count",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.max-wait-thread-count",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.fail-fast",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.phy-timeout-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.phy-max-use-count",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.keep-alive",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.pool-prepared-statements",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.init-variants",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.init-global-variants",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.use-unfair-lock",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.kill-when-socket-read-timeout",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.connection-properties",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "defaultValue": false,
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.max-pool-prepared-statement-per-connection-size",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.init-connection-sqls",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.share-prepared-statements",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.connection-error-retry-attempts",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.break-after-acquire-failure",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.remove-abandoned",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.remove-abandoned-timeout-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.log-abandoned",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.query-timeout",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.transaction-query-timeout",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.public-key",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.connect-timeout",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.socket-timeout",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.time-between-connect-error-millis",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.wall",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.slf4j",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.log4j",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.log4j2",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.commons-Log",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.stat",
+      "description": "Druid全局参数配置",
+      "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
+    },
+    {
+      "sourceType": "com.pivotal.cloud.datasource.druid.properties.DynamicDruidDatasourceProperties",
+      "name": "pivotal.cloud.dynamic.druid.datasource.pool-config.proxyFilters",
       "description": "Druid全局参数配置",
       "type": "com.pivotal.cloud.datasource.boot.config.DruidConfig"
     },

@@ -1,5 +1,7 @@
 package com.pivotal.cloud.datasource.boot.event;
 
+
+
 import com.pivotal.cloud.datasource.boot.properties.DatasourceProperties;
 import com.pivotal.cloud.datasource.boot.utils.SecretCryptoUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -10,28 +12,30 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.event.EncDatasourceInitializrEvent
+ * @packageName com.pivotal.cloud.datasource.boot.event.EncDatasourceInitializrEvent
+ * @projectName: pivotalCloud
+ * @className: EncDatasourceInitializrEvent
  * @title: 封装pivotalCloud项目-EncDatasourceInitializrEvent类
- * @description: <p>
- *         pivotalCloud项目-EncDatasourceInitializrEvent
- *         </p>
  * @content: EncDatasourceInitializrEvent
- * @author: Powered by marklin
- * @datetime: 2023-06-03 01:29
+ * @description: pivotalCloud项目-EncDatasourceInitializrEvent类,主要用作EncDatasourceInitializrEvent。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 17:23
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
 @Slf4j
-public class EncDatasourceInitializrEvent  implements DatasourceInitializrEvent {
+public class EncDatasourceInitializrEvent implements DatasourceInitializrEvent {
+
     /**
      * 加密正则
      */
     private static final Pattern ENC_PATTERN = Pattern.compile("^ENC\\((.*)\\)$");
+
+
     /**
      * 连接池创建前执行（可用于参数解密）
      *
-     * @param properties
-     *         数据源基础配置信息
+     * @param properties 数据源基础信息
      */
     @Override
     public void beforeCreate(DatasourceProperties properties) {
@@ -46,11 +50,11 @@ public class EncDatasourceInitializrEvent  implements DatasourceInitializrEvent 
     /**
      * 连接池创建后执行
      *
-     * @param datasource
-     *         连接池
+     * @param dataSource 连接池
      */
     @Override
-    public void afterCreate(DataSource datasource) {
+    public void afterCreate(DataSource dataSource) {
+
     }
 
     /**

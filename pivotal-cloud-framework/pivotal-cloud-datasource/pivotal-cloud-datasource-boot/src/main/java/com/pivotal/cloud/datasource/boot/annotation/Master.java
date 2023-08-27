@@ -5,21 +5,21 @@ import com.pivotal.cloud.datasource.boot.constants.DatasourceGroup;
 import java.lang.annotation.*;
 
 /**
- * @className: com.pivotal.cloud.datasource.boot.annotation.Master
+ * @packageName com.pivotal.cloud.datasource.boot.annotation.Master
+ * @projectName: pivotalCloud
+ * @className: Master
  * @title: 封装pivotalCloud项目-Master类
- * @description: <p>
- *         pivotalCloud项目-Master
- *         </p>
- * @content: Master-主数据源自定义注解
- * @author: Powered by marklin
- * @datetime: 2023-06-02 22:09
+ * @content: Master
+ * @description: pivotalCloud项目-Master类,主要用作Master。
+ * @author: Powered by Marklin
+ * @datetime: 2023-06-02 10:35
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-@Inherited
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@DynamicDatasource(DatasourceGroup.MASTER)
+@com.pivotal.cloud.datasource.boot.annotation.DynamicDatasource(DatasourceGroup.MASTER)
 public @interface Master {
+
 }
