@@ -11,7 +11,7 @@ package com.pivotal.cloud.datasource.boot.holder;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2023 pivotalCloud Systems Incorporated. All rights reserved.
  */
-public class DynamicDataSourceHolder {
+public class DynamicDatasourceHolder {
     private static final ThreadLocal<String> CONTEXT_HOLDER = new ThreadLocal<>();
 
     public static void setDataSourceKey(String dataSourceKey) {

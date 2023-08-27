@@ -1,7 +1,7 @@
 package com.pivotal.cloud.datasource.boot.aspect;
 
 import com.pivotal.cloud.datasource.boot.annotation.DynamicDatasource;
-import com.pivotal.cloud.datasource.boot.holder.DynamicDataSourceHolder;
+import com.pivotal.cloud.datasource.boot.holder.DynamicDatasourceHolder;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -38,7 +38,7 @@ public class DynamicDatasourceAspect {
    */
   @Before("dataSourcePointcut() && @annotation(dynamicDataSource)")
   public void switchDataSource(DynamicDatasource dynamicDataSource) {
-    DynamicDataSourceHolder.setDataSourceKey(dynamicDataSource.value());
+    DynamicDatasourceHolder.setDataSourceKey(dynamicDataSource.value());
   }
 
 
@@ -47,6 +47,6 @@ public class DynamicDatasourceAspect {
    */
   @After("dataSourcePointcut()")
   public void clearDataSource() {
-    DynamicDataSourceHolder.clearDataSourceKey();
+    DynamicDatasourceHolder.clearDataSourceKey();
   }
 }
