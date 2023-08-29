@@ -89,6 +89,6 @@ public class SpringContextHolder implements BeanFactoryPostProcessor, Applicatio
 
     @Override
     public void destroy() throws Exception {
-
+        this.clearHolder();
     }
 }

@@ -14,11 +14,48 @@
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
+    <dependencyManagement>
+        <dependencies>
+            <!--pivotal-cloud-common依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-api</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-boot</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-base</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-center</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-domain</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-common-web</artifactId>
+                <version>${pivotal-cloud.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        
     </dependencies>
 
     <modules>
