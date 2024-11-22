@@ -1,4 +1,4 @@
-package com.pivotal.cloud.common.api.userinterface.controller;
+package com.pivotal.cloud.common.api.interfaces.controller;
 
 /**
  * @className: com.pivotal.cloud.common.api.userinterface.controller.WebController

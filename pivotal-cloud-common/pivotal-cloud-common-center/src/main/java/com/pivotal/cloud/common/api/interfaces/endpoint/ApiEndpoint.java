@@ -1,4 +1,4 @@
-package com.pivotal.cloud.common.api.userinterface.endpoint;
+package com.pivotal.cloud.common.api.interfaces.endpoint;
 
 /**
  * @className: com.pivotal.cloud.common.api.userinterface.endpoint.ApiCenterEndpoint
